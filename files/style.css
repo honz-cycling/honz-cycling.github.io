@@ -39,6 +39,7 @@
     - 1. Video Buttons -
 *********************/
 
+/*
 [class^="fa-"], [class*=" fa-"] {
 	font-family: FontAwesome;
 	speak: none;
@@ -50,6 +51,7 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+*/
 
 .fa-play:before {
 	content: "\f04b";
@@ -406,6 +408,14 @@ input[type="submit"]:hover {
 	text-shadow: 0 0 5px black;;
 }
 
+.rights {
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin: 20px 0;
+	text-align: center;
+	text-shadow: 0 0 5px black;;
+}
+
 .row h2 {
 	font-size: 24px;
 	margin-bottom: 14px;
@@ -421,6 +431,10 @@ input[type="submit"]:hover {
 }
 
 #modal3 .section-title {
+	margin-bottom: 42px;
+}
+
+#modal4 .section-title {
 	margin-bottom: 42px;
 }
 
@@ -750,6 +764,18 @@ transform:rotate(0deg);
 	z-index: 997;
 }
 
+#modal4 {
+	background: #1f1f1f;
+	background: rgba(31,31,31,0.6);
+	display: none;
+	left: 0;
+	min-height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 997;
+}
+
 
 
 
@@ -765,6 +791,9 @@ transform:rotate(0deg);
 	max-width: 612px;
 }
 
+#modal4 .inner {
+	max-width: 612px;
+}
 
 /* Background Overlay */
 .body-bg {
@@ -901,7 +930,6 @@ transform:rotate(0deg);
 #main .modal-toggle {
 	margin: 50px 0px;
 	left: 0;
-
 	text-align: center;
 	width: 100%;
 }
@@ -916,6 +944,15 @@ transform:rotate(0deg);
 }
 
 .modal-note .modal3-note {
+	color: #dadada;
+	display: block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.modal-note .modal4-note {
 	color: #dadada;
 	display: block;
 	font-size: 14px;
@@ -939,6 +976,11 @@ transform:rotate(0deg);
 }
 
 #modal3 .modal-toggle  {
+	margin-bottom: 42px;
+	text-align: center;
+}
+
+#modal4 .modal-toggle  {
 	margin-bottom: 42px;
 	text-align: center;
 }
