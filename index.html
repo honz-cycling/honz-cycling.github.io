@@ -6,8 +6,8 @@
 	<title>HONZ cycling club</title>
 	
 	<!-- Seo Tags -->
-	<meta name="description" content="Webpage of Honz cycling club">
-	<meta name="keywords" content="cycling, honz, club, Gurahont, strava, gurahonz, ciclism">
+	<meta name="description" content="Your page description here">
+	<meta name="keywords" content="Your meta keywords, here">
 	<meta name="robots" content="index, follow"> 
 
 	<!-- Favicon -->
@@ -15,8 +15,7 @@
 	<link rel="icon" href="files/favicon.png" type="image/x-icon">
 
 	<!-- Included CSS Files -->
-	<link href="https://fonts.googleapis.com/css?family=Sansita:400,400i,700,700i,800,800i,900,900i" rel="stylesheet">
-	<link href='files/font-awesome.css' rel='stylesheet' type='text/css' media="all">
+	<script src="https://kit.fontawesome.com/c79bcd815a.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="files/style.css">
 	<link rel="stylesheet" type="text/css" media="all" href="files/css.css">
 	<script type="text/javascript" src="files/modernizr.js"></script>
@@ -73,13 +72,13 @@
 
 					<!-- Social links -->
 					<div class="social">
-						<a href="#"><span class="fa fa-envelope" title="Email"></span></a>
+						<a href="#" id="modal4-open" ><i class="fa-solid fa-envelope"></i></a>
 						<a href="#"><span class="fa fa-facebook" title="Strava"></span></a>
                         <a href="#"><span class="fa fa-twitter" title="Twitter"></span></a>
                         <a href="#"><span class="fa fa-instagram" title="Instagram"></span></a>
                         <a href="#"><span class="fa fa-google-plus" title="Google Plus"></span></a>
 					</div>
-					
+					<p class="rights">© flaX1k, 2024</p>
 				</section>
 			</div>
 		</div>
@@ -100,11 +99,10 @@
 					<!-- Columns -->
 					<div class="row">
 						<div class="one">
-							<p>Bine ati venit la HONZ cycling club, o comunitate mica pentru pasionatii de ciclism din zona Gurahont.</p>
-							<p>Suntem cativa pasionati de ciclism, iar daca ciclismul este si pentru tine o pasiune, indiferent pe ce tip de bicicleta pedalezi, ne-am bucura daca te vei alatura clubului nostru, sa fim cati mai multi, sa ne bucuram impreuna de cat mai multe experiente pe doua roti.</p>
-							<p>Clubul nostru este un loc in care va puteti exprima ideile, puteti participa la discutii, puteti pune intrebari, puteti gasi raspunsuri legate de ciclism sau de ce nu, programa viitoare ture de ciclism.</p>
-							<p>Fie ca esti un incepator sau un ciclist experimentat, aici vei gasi informatii despre ceea ce ne leaga, ciclismul.</p>								
-							<p>Alatura-te noua astazi si devin-o parte din clubul nostru de ciclism!</p>
+							<p>Bine ati venit la HONZ cycling club, o comunitate mica a pasionatilor de ciclism din zona Gurahont.</p>
+							<p>Ciclismul de sosea este mai mult decat timpi, KOM-uri, depasirea vitezelor, distantelor si statisticilor. Este o modalitate de a te relaxa, o pasiune, de a te simti bine pe bicicleta.</p>
+							<p>Aceasta pagina contine cateva sugestii pentru ture cu bicicleta, articole despre ciclism, idei si opinii.</p>
+							<p>Fie ca esti un incepator sau un ciclist experimentat, alatura-te noua astazi si devin-o parte a clubului nostru de ciclism!</p>
 						</div>
 					</div>
 
@@ -124,18 +122,6 @@
 			<!-- Columns -->
 			<p class="subtitle">Cateva competitii, pentru amatorii de ciclism din Romania, in ordine cronologica</p>
 			<p class="subtitle">Lista in continua actualizare</p>
-			<!-- subscribe form -->
-			<div id="subscribe" class="form-wrap">
-				<form action="subscribe.php" method="post" id="subscribe-form" novalidate="novalidate">
-					<p class="form-field">
-						<label for="subscribe_email" class="screen-reader-text">Your email</label>
-						<input type="text" name="subscribe_email" id="subscribe_email" placeholder="Your email">
-					</p>
-					<p class="form-submit">
-						<input type="submit" name="subscribe_submit" id="subscribe_submit" value="Subscribe">
-					</p>
-				</form>
-				<div class="loading" style="display: none;"><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></div><div class="success" style="display: none;"></div></div>
 		</section>
 	</div>
 </div>
@@ -156,25 +142,79 @@
 </div>
 </div>
 
-	<!-- Background overlay -->
-	<div class="body-bg">
-	
-	<!-- Sky -->
-	<!-- Cloud animation -->
-	<div id="cloud-animation">
-		<!--
-		<img src="files/cloud-01.png" alt="" id="cloud1">
-		<img src="files/cloud-02.png" alt="" id="cloud2">
-		<img src="files/cloud-03.png" alt="" id="cloud3">
-		<img src="files/cloud-04.png" alt="" id="cloud4">
-		-->
-	</div>
+<!-- Modal page: Contacteaza-ne -->
+<div id="modal4">
+	<div class="inner">
+
+	<!-- Modal toggle -->
+	<div class="social">
+		<a href="#" id="modal4-close"><span class="fa fa-times" title="Close"></span></a>
 	</div>
 
+	<!-- Content -->
+	<section class="content">
+					
+		<h1 class="section-title">Contacteaza-ne</h1>
+					
+		<!-- Columns -->
+			<div class="row">
+				<div class="one">
+					<p>Daca vrei sa ne contactezi, poti completa adresa de email si-ti vom raspunde.</p>
+			<!-- subscribe form -->
+			<div id="subscribe" class="form-wrap">
+				<form action="subscribe.php" method="post" id="subscribe-form" novalidate="novalidate">
+					<p class="form-field">
+						<label for="subscribe_email" class="screen-reader-text">Adresa email</label>
+						<input type="text" name="subscribe_email" id="subscribe_email" placeholder="Adresa email">
+					</p>
+					<p class="form-submit">
+						<input type="submit" name="subscribe_submit" id="subscribe_submit" value="Trimite">
+					</p>
+				</form>
+				<div class="loading" style="display: none;"><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></div><div class="success" style="display: none;"></div></div>
+					<p>Sau poti folosi contactele de mai jos</p>
+				</div>
+						
+			<div class="one-third">
+				<h2><i class="fa fa-phone"></i> Telefon</h2>
+					<p>Flavius: (+40) 753 401 109<br />Denis: (+40) 755 646 514</p>
+			</div>
+			<div class="one-third">
+				<h2><i class="fa fa-envelope-o"></i> Email</h2>
+					<p>flavius.cristiu@gmail.com<br />vesa.denis@gmail.com</p>
+			</div>
+			<div class="one-third">
+				<h2><i class="fa fa-map-marker"></i> Adresa</h2>
+					<p>loc. Gurahont, jud. Arad, ROMANIA</p>
+			</div>
+			</div>
+
+	</section>
+
+	</div>
+</div>
+
+<!-- Background overlay -->
+<div class="body-bg"></div>
+
+<!-- 
+<div id="preload">
+	<div id="preload-content">
+		<div class="preload-spinner">
+			<div class="loading-logo-wraper">
+				<img src="files/logo.png" alt="">
+				</div>
+					<div class="tp-loader spinner"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		
+	Loading -->
 
 	<!-- Included JS Files -->
 	<script type="text/javascript" src="files/jquery-1.js"></script>
 	<script type="text/javascript" src="files/plugins.js"></script>
 	<script type="text/javascript" src="files/scripts.js"></script>
 
-<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 703px; width: 1536px; z-index: -999999; position: fixed;"><img style="position: absolute; margin: 0px; padding: 0px; border: medium none; width: 1536px; height: 864px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -80.5px;" src="files/bg-2.jpg"></div></body></html>
+</div></body></html>
