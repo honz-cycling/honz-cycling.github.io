@@ -48,8 +48,8 @@
 			},
 			messages: {
 				subscribe_email: {
-					required: 'Email address is required',
-					email: 'Email address is not valid'
+					required: 'Adresa de email este necesara',
+					email: 'Adresa de email nu este valida'
 				}
 			},
 			errorElement: 'span',
@@ -62,7 +62,7 @@
 				$.post($(form).attr('action'), $(form).serialize(), function(data){
 					$('#subscribe .loading').animate({opacity: 0}, function(){
 						$(this).hide();
-						$('#subscribe .success').show().html('<p>Thank you for subscribing!</p>').animate({opacity: 1});
+						$('#subscribe .success').show().html('<p>Multumim!</p>').animate({opacity: 1});
 					});
 				});
 				return false;
@@ -119,6 +119,25 @@
 			e.preventDefault();
 
 			$('#modal3-close').on('click', function(e) {
+				modal.removeClass('modal-active').fadeOut(400, function(){
+					mainInner.animate({ opacity: 1 }, 400);
+				});
+				e.preventDefault();
+			});
+		});
+
+		// Open modal3 window on click
+		$('#modal4-open').on('click', function(e) {
+			var mainInner = $('#main .inner'),
+				modal = $('#modal4');
+
+			mainInner.animate({ opacity: 0 }, 400, function(){
+				$('html,body').scrollTop(0);
+				modal.addClass('modal-active').fadeIn(400);
+			});
+			e.preventDefault();
+
+			$('#modal4-close').on('click', function(e) {
 				modal.removeClass('modal-active').fadeOut(400, function(){
 					mainInner.animate({ opacity: 1 }, 400);
 				});
