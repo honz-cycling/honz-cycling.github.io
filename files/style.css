@@ -39,20 +39,6 @@
     - 1. Video Buttons -
 *********************/
 
-/*
-[class^="fa-"], [class*=" fa-"] {
-	font-family: FontAwesome;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-*/
-
 .fa-play:before {
 	content: "\f04b";
 }
@@ -284,12 +270,47 @@ textarea {
 	width: 100%;
 }
 
+.two {
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+	float: right;
+	margin:auto;
+}
+
+.two {
+	width: 90%;
+}
+
+.table-row {
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+	float: right;
+	margin:auto;
+}
+
+.table-row:hover { 
+	background:rgba(198, 220, 235, 0.5);
+	color:#fff;
+}
+
+.table-row {
+	width: 90%;
+}
+
 .one-half {
 	-webkit-box-sizing:	border-box;
 	-moz-box-sizing:	border-box;
 	box-sizing:			border-box;
 	float: left;
-	padding-left: 38px;
+	font-size: 16px;
+	color: #000; 
+	text-align: center; 
+	text-shadow: 0 0 5px black;
+	background: rgba(255,255,255,0.8); 
+	outline: none; 
+	border:1px solid #fff;
 }
 
 .one-half {
@@ -308,6 +329,43 @@ textarea {
 
 .one-third {
 	width: 33%;
+}
+
+
+.table-row1 {
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+	float: left;
+	font-size: 16px;
+	color: #fff; 
+	text-align: center; 
+	text-shadow: 0 0 5px black;
+	background: rgba(255,255,255,0.2); 
+	outline: none; 
+	border:1px solid #fff;
+}
+
+.table-row1 {
+	width: 50%;
+}
+
+.table-row2 {
+	-webkit-box-sizing:	border-box;
+	-moz-box-sizing:	border-box;
+	box-sizing:			border-box;
+	float: left;
+	font-size: 16px;
+	color: #fff; 
+	text-align: center; 
+	text-shadow: 0 0 5px black;
+	background: rgba(255,255,255,0.4); 
+	outline: none; 
+	border:1px solid #fff;
+}
+
+.table-row2 {
+	width: 50%;
 }
 
 /* Forms */
@@ -1009,13 +1067,27 @@ transform:rotate(0deg);
 
 @media only screen and (max-width: 540px) {
 	.one-half  {
-		width: 100%;
+		width: 50%;
 	}	
 }
 
 @media only screen and (max-width: 540px) {
 	.one-third  {
 		width: 80%;
+	}	
+
+	.two  {
+		width: 90%;
+	}	
+}
+
+@media only screen and (max-width: 540px) {
+	.table-row-third  {
+		width: 80%;
+	}	
+
+	.table-row  {
+		width: 90%;
 	}	
 }
 
@@ -1027,7 +1099,7 @@ transform:rotate(0deg);
 		padding: 28px 6px 28px;
 	}
 	.modal-toggle {
-		font-size: 16px;
+		font-size: 13px;
 	}
 	#newsletter-form .form-field {
 		margin: 0 0 14px;
