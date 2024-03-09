@@ -42,32 +42,6 @@
 		// Validate subscribe form
 		$('<div class="loading"><span class="bounce1"></span><span class="bounce2"></span><span class="bounce3"></span></div>').hide().appendTo('.form-wrap');
 		$('<div class="success"></div>').hide().appendTo('.form-wrap');
-		$('#subscribe-form').validate({
-			rules: {
-				subscribe_email: { required: true, email: true }
-			},
-			messages: {
-				subscribe_email: {
-					required: 'Adresa de email este necesara',
-					email: 'Adresa de email nu este valida'
-				}
-			},
-			errorElement: 'span',
-			errorPlacement: function(error, element){
-				error.appendTo(element.parent());
-			},
-			submitHandler: function(form){
-				$(form).hide();
-				$('#subscribe .loading').css({ opacity: 0 }).show().animate({ opacity: 1 });
-				$.post($(form).attr('action'), $(form).serialize(), function(data){
-					$('#subscribe .loading').animate({opacity: 0}, function(){
-						$(this).hide();
-						$('#subscribe .success').show().html('<p>Multumim!</p>').animate({opacity: 1});
-					});
-				});
-				return false;
-			}
-		});
 
 		// Open modal window on click
 		$('#modal-open').on('click', function(e) {
