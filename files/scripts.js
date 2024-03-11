@@ -80,8 +80,26 @@
 					e.preventDefault();
 				});
 			});
+
+			$('#modal31-open').on('click', function(e) {
+				var mainInner = $('#main .inner'),
+					modal = $('#modal31');
 	
-			// Open modal3 window on click
+				mainInner.animate({ opacity: 0 }, 400, function(){
+					$('html,body').scrollTop(0);
+					modal.addClass('modal-active').fadeIn(400);
+				});
+				e.preventDefault();
+	
+				$('#modal31-close').on('click', function(e) {
+					modal.removeClass('modal-active').fadeOut(400, function(){
+						mainInner.animate({ opacity: 1 }, 400);
+					});
+					e.preventDefault();
+				});
+			});
+	
+			/***
 			$('#modal3-open').on('click', function(e) {
 				var mainInner = $('#main .inner'),
 					modal = $('#modal3'),
@@ -116,6 +134,8 @@
 					e.preventDefault();
 				});
 			});
+
+			**/
 
 	
 			// Open modal3 window on click
