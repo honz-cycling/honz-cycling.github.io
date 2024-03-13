@@ -29,7 +29,8 @@
 				'files/bg-1.jpg',
 				'files/bg-2.jpg',
 				'files/bg-3.jpg',
-				'files/bg-4.jpg'
+				'files/bg-4.jpg',
+				'files/bg-5.jpg'
 			], {
 				fade: 2750,
 				duration: 6000
@@ -97,6 +98,44 @@
 					e.preventDefault();
 				});
 			});
+	
+			/***
+			$('#modal3-open').on('click', function(e) {
+				var mainInner = $('#main .inner'),
+					modal = $('#modal3'),
+					modal31 = $('#modal31');
+	
+				mainInner.animate({ opacity: 0 }, 400, function(){
+					$('html,body').scrollTop(0);
+					modal.addClass('modal-active').fadeIn(400);
+				});
+				e.preventDefault();
+
+				$('#modal31-open').on('click', function(e) {
+					modal.removeClass('modal-active').fadeOut(400, function(){
+						$('html,body').scrollTop(0);
+						modal31.addClass('modal-active').fadeIn(400);
+					});
+					e.preventDefault();
+				});
+	
+				$('#modal31-close').on('click', function(e) {
+					modal31.removeClass('modal-active').fadeOut(400, function(){
+					$('html,body').scrollTop(0);
+					modal.addClass('modal-active').fadeIn(400);
+					});
+					e.preventDefault();
+				});
+
+				$('#modal3-close').on('click', function(e) {
+					modal.removeClass('modal-active').fadeOut(400, function(){
+						mainInner.animate({ opacity: 1 }, 400);
+					});
+					e.preventDefault();
+				});
+			});
+
+			**/
 
 	
 			// Open modal3 window on click
@@ -111,25 +150,6 @@
 				e.preventDefault();
 	
 				$('#modal4-close').on('click', function(e) {
-					modal.removeClass('modal-active').fadeOut(400, function(){
-						mainInner.animate({ opacity: 1 }, 400);
-					});
-					e.preventDefault();
-				});
-			});
-
-			// Open modal3 window on click
-			$('#trasee-sebis').on('click', function(e) {
-				var mainInner = $('#main .inner'),
-					modal = $('#modal51');
-	
-				mainInner.animate({ opacity: 0 }, 400, function(){
-					$('html,body').scrollTop(0);
-					modal.addClass('modal-active').fadeIn(400);
-				});
-				e.preventDefault();
-	
-				$('#modal51-close').on('click', function(e) {
 					modal.removeClass('modal-active').fadeOut(400, function(){
 						mainInner.animate({ opacity: 1 }, 400);
 					});

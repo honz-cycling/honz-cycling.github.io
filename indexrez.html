@@ -17,7 +17,6 @@
 	<!-- Included CSS Files -->
 	<script src="https://kit.fontawesome.com/c79bcd815a.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="files/style.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 	<script type="text/javascript" src="files/modernizr.js"></script>
 </head>
 
@@ -28,24 +27,12 @@
 		<div id="preload-content" style="display: none;">
 			<div class="preload-spinner">
 			<div class="loading-logo-wraper">
-  				<img src="files/logo.png" alt="">
+  		<img src="files/logo.png" alt="">
 			</div>
 				<div class="tp-loader spinner"></div>
 			</div>
 		</div>
-	</div>	
-
-	<div id="sebis-content" style="display:none;max-width:450px;">
-        <h2>Sebis</h2>
-        <p class="trasee">Cel mai simplu si comod traseu, folosit fie in timpul saptamanii sau ca relaxare/recuperare.</p>
-        <p class="trasee">De adaugat harta, detalii si GPX....</p>
-    </div>
-
-	<div id="vasoaia-content" style="display:none;max-width:450px;">
-        <h2>Vasoaia</h2>
-        <p class="trasee">Cel mai simplu si comod traseu, folosit fie in timpul saptamanii sau ca relaxare/recuperare.</p>
-        <p class="trasee">De adaugat harta, detalii si GPX....</p>
-    </div>
+	</div>
 	
 	<!-- Slideshow Ken Burns -->
 	<div class="slideshow">
@@ -110,7 +97,8 @@
 					<div class="row">
 						<div class="one">
 							<p>Bine ati venit la HONZ cycling club, o comunitate mica a pasionatilor de ciclism din zona Gurahont.</p>
-							<p>Ciclismul de sosea este mai mult decat timpi, KOM-uri, depasirea vitezelor, distantelor si statisticilor. Este o modalitate de a te relaxa, o pasiune, un sport si in aer liber.</p>
+							<p>Ciclismul de sosea este mai mult decat timpi, KOM-uri, depasirea vitezelor, distantelor si statisticilor. Este o modalitate de a te relaxa, o pasiune, de a te simti bine pe bicicleta.</p>
+							<p>Aceasta pagina contine cateva sugestii pentru ture cu bicicleta, articole despre ciclism, idei si opinii.</p>
 							<p>Fie ca esti un incepator sau un ciclist experimentat, alatura-te noua astazi si devino parte a clubului nostru de ciclism!</p>
 						</div>
 					</div>
@@ -242,7 +230,25 @@
 			</div>
 		</div>
 
-		<!-- Modal page: Trasee -->
+		<!-- Modal page: Articole -->
+		<div id="modal3">
+			<div class="inner">
+				<!-- Modal toggle -->
+				<div class="social"><a href="#" id="modal3-close"><span class="fa fa-times" title="Close"></span></a></div>
+				<!-- Content -->
+				<section class="content">
+					<h1 class="section-title">Trasee & Articole</h1>
+					<p class="subtitle">Cateva sugestii de trasee pentru ciclismul de sosea, un bazar si, de asemenea, cateva impresii ale membrilor clubului asezate in articole.</p>
+					<div class="modal-article">
+					<a href="#" id="modal31-open" class="button-article">Trasee</a>
+					<a href="#" id="modal32-open" class="button-article">Bazar</a>
+					<a href="#" id="modal33-open" class="button-article">Articole</a>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<!-- Modal page: Articole -->
 		<div id="modal31">
 			<div class="inner">
 				<!-- Modal toggle -->
@@ -252,42 +258,39 @@
 					<h1 class="section-title">Trasee</h1>
 					<p class="subtitle">Cateva sugestii de trasee pentru ciclismul de sosea, in zona Gurahont, dar si cateva trasee care merita incercate.</p>
 					<div class="trasee-grid">
-						<div class="image-trasee">							
-							<a href="#" data-fancybox data-src="#sebis-content" class="image-overlay"></a>							
+						<div class="image-trasee">
+							<div class="image-overlay"></div>
 							<img src="files/route07.jpg" />
-							<div class="image-text">Sebis</div>		
-							<div class="trasee-details"><i class="fa-regular fa-clock"></i>&nbsp;0:45 • 50&nbsp;km • ↗ 170&nbsp;m</div>					
+							<div class="image-text">Bucla Sebis</div>
 						</div>
 						<div class="image-trasee">
-							<a href="#" data-fancybox data-src="#vasoaia-content" class="image-overlay"></a>	
+							<div class="image-overlay"></div>
 							<img src="files/route01.jpg"/>
 							<div class="image-text">Vasoaia</div>
-							<div class="trasee-details"><i class="fa-regular fa-clock"></i>&nbsp;02:58 • 87&nbsp;km • ↗ 670&nbsp;m</div>
 						</div>
 						<div class="image-trasee">
-							<a href="#" data-fancybox data-src="#moneasa-content" class="image-overlay"></a>	
-							<img src="files/route03.jpg"/>
-							<div class="image-text">Moneasa</div>
-							<div class="trasee-details"><i class="fa-regular fa-clock"></i>&nbsp;02:53 • 82&nbsp;km • ↗ 440&nbsp;m</div>
-						</div>
-						<div class="image-trasee">
-							<a href="#" data-fancybox data-src="#julita-content" class="image-overlay"></a>	
+							<div class="image-overlay"></div>
 							<img src="files/route04.jpg"/>
+							<div class="image-text">Slatina de Mures</div>
+						</div>
+						<div class="image-trasee">
+							<div class="image-overlay"></div>
+							<img src="files/route03.jpg"/>
 							<div class="image-text">Julita</div>
 						</div>
 						<div class="image-trasee">
-							<a href="#" data-fancybox data-src="#taut-content" class="image-overlay"></a>	
+							<div class="image-overlay"></div>
 							<img src="files/route06.jpg" />
-							<div class="image-text">Taut</div>
+							<div class="image-text">Lacul Taut</div>
 						</div>
 						<div class="image-trasee">
-							<a href="#" data-fancybox data-src="#siria-content" class="image-overlay"></a>	
+							<div class="image-overlay"></div>
 							<img src="files/route05.jpg" />
-							<div class="image-text">Siria</div>
+							<div class="image-text">Cetatea Siria</div>
 						</div>
 
 						<div class="image-trasee">
-							<a href="#" data-fancybox data-src="#capruta-content" class="image-overlay"></a>	
+							<div class="image-overlay"></div>
 							<img src="files/route02.jpg" />
 							<div class="image-text">Capruta</div>
 						</div>
@@ -354,18 +357,24 @@
 		</div>
 	</div>
 
- 
-
-
+<!-- 
+<div id="preload">
+	<div id="preload-content">
+		<div class="preload-spinner">
+			<div class="loading-logo-wraper">
+				<img src="files/logo.png" alt="">
+				</div>
+					<div class="tp-loader spinner"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		
+-->
 
 <!-- Included JS Files -->
 <script type="text/javascript" src="files/jquery-1.js"></script>
 <script type="text/javascript" src="files/plugins.js"></script>
 <script type="text/javascript" src="files/scripts.js"></script>
 <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=jgdg545d&n=n1.ratufa.io"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-<script>Fancybox.bind('[data-fancybox]', {
-        // Custom options for all galleries
-});    
-</script>
 </div></body></html>

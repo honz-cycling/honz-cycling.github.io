@@ -162,6 +162,11 @@ p {
 	margin: 0 0 28px;
 }
 
+p.trasee {
+	margin: 0 0 10px;
+	font-size: 14px;
+}
+
 ul,
 ol {
 	margin: 0 0 28px;
@@ -712,7 +717,7 @@ a.button-article:active {
 	/*transition: opacity 0.3s ease-in-out; */
   }
 
-.image-overlay {
+a.image-overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -727,21 +732,35 @@ a.button-article:active {
 	opacity: 1; /* Reduce image opacity on hover if needed */
 }
 
-.image-trasee:hover .image-overlay {
+.image-trasee:hover a.image-overlay {
 	background: rgba(255, 255, 255, 0.1); /* White background with 0.7 opacity on hover */
 }
 
 .image-text {
 	position: absolute;
-	top: 30%;
+	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: black;
+	color: white;
 	font-size: 20px;
 	font-weight: bold;
-	text-align: left;
-	text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.7);
-  }
+	text-align: center;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.trasee-details {
+	position: absolute;
+	background: rgba(255, 255, 255, 0.8); 
+	top: 90%;
+	left:50%;
+	width:100%;
+	transform: translate(-50%, -50%);
+	color: black;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
 
 
 /* Preload */
@@ -922,9 +941,6 @@ transform:rotate(0deg);
 	z-index: 999;
 }
 
-
-
-
 #modal .inner {
 	max-width: 612px;
 }
@@ -942,6 +958,10 @@ transform:rotate(0deg);
 }
 
 #modal31 .inner {
+	max-width: 612px;
+}
+
+#modal51 .inner {
 	max-width: 612px;
 }
 
@@ -1193,6 +1213,10 @@ transform:rotate(0deg);
 
 @media only screen and (max-width: 540px) {
 	p {
+		margin: 0 0 5px;
+	}
+
+	p.trasee{
 		margin: 0 0 5px;
 	}
 	.one-third  {
