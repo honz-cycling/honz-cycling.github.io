@@ -279,29 +279,44 @@
                     </div>
                     <div class="space-y-5">
                         <div class="grid grid-cols-1 gap-y-5 schedule_contact">
-                            <form action="ttps://show.ratufa.io/all?query1=value1" id="contactForm" novalidate="novalidate"" method="POST">
+
+                            <form id="home_free_demo" action="contact_submission/" method="POST">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="RDogNMaMgFbPpRXfbECcoeGGgCoi1iCdFp4jQbv25A40thYTAdn9xDA292cfBqu1">
                                 <div>
                                     <div>
                                         <label class="block font-medium text-normal text-gray-700"
-                                            for="home_firstname">First name</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="firstname" id="firstname" placeholder="Michael" required>
+                                            for="home_firstname">Firstname</label>
+                                        <input
+                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                            type="text" name="firstname" id="home_firstname" placeholder="Michael">
                                     </div>
 
                                     <div>
                                         <label class="block font-medium text-normal text-gray-700" for="home_email">
                                             E-mail</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="email" name="email_address" id="email_address" placeholder="michael.ionescu@example.com" required>
+                                        <input
+                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                            type="email" name="email" id="home_email"
+                                            placeholder="michael.ionescu@example.com">
                                     </div>
 
                                     <div class="mb-8">
-                                        <label class="block font-medium text-normal text-gray-700" for="home_question">Mesaj</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="message" id="message" placeholder="Your message or question" required>
+                                        <label class="block font-medium text-normal text-gray-700"
+                                            for="home_question">Message</label>
+                                        <input
+                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                            type="text" name="question" id="home_question"
+                                            placeholder="Your message or question">
+                                    </div>
+
+                                    <div class="mb-8" style="text-align:center;">
+                                        <div class="g-recaptcha" data-sitekey="6LfCS4kiAAAAAGw--TKam-WE3SVPuv9IQKOCQyau"></div>
                                     </div>
                                 </div>
-                                <input class="button" type="submit" name="contact_submit" id="contact_submit" value="Send">
+
+                                <input type="hidden" name="contact" id="home_demo_form" />
+
+                                <input class="button" type="submit" value="Send">
                             </form>
                         </div>
                     </div>
@@ -327,6 +342,5 @@
     </div>
   </div>
 </footer>
-<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=jj7btwmu&n=n1.ratufa.io"></script>
 </body>
 </html>

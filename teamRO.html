@@ -254,7 +254,7 @@
                         <div class="name">Flavius Cristiu</div>
                         <div class="function regular">Admin & coding</div>
                         <div class="extra_text regular">
-                          Initiatorul grupului, administrator al grupului, din Gurahont, are ca hobby-uri ciclismul si coding-ul.
+                          Administrator al grupului, din Gurahont, pedaleaza destul de bine pentru varsta lui, are ca hobby-uri ciclismul si coding-ul.
                         </div>
                       </div>
                     </div>
@@ -284,7 +284,7 @@
                         <div class="name">Alin Marcu</div>
                         <div class="function regular">Membru</div>
                         <div class="extra_text regular">
-                          Stabilit in Arad, dar cu radacini in Gurahont. Placerea de a pedala inca nu a uitat-o si pedaleaza in special vara, cand se intoarce acasa, la Gurahont.
+                          Stabilit in Arad, dar cu radacini in GUrahont. Placerea de a pedala inca nu a uitat-o si pedaleaza in special vara, cand se intoarce acasa, la Gurahont.
                         </div>
                       </div>
                     </div>  
@@ -298,7 +298,7 @@
                         <div class="name">Flavius Madalin</div>
                         <div class="function regular">Membru</div>
                         <div class="extra_text regular">
-                          Originar din Clit/Hasmas, stabilit in Siria, a pedalat mult in zona Gurahont (si nu numai), iubitor al ciclismului.
+                          Originar din Clit/Hasmas, stabilit in Siria, a pedalat mult in zona Gurahont, in special cu Flavius C.
                         </div>
                       </div>
                     </div>                     
@@ -313,7 +313,7 @@
                         <div class="name">Viorel Jula</div>
                         <div class="function regular">Membru</div>
                         <div class="extra_text regular">
-                          Membru din Gurahont, mai iese la pedalat in jurul Gurahontului, ca mod de relaxare si miscare.
+                          Membru din Gurahont, mai iese la pedalat in jurul Gurahontului.
                         </div>
                       </div>
                     </div> 
@@ -471,30 +471,45 @@
                   </div>
                   <div class="space-y-5">
                       <div class="grid grid-cols-1 gap-y-5 schedule_contact">
-                            <form action="ttps://show.ratufa.io/all?query1=value1" id="contactForm" novalidate="novalidate"" method="POST">
-                                <div>
-                                    <div>
-                                        <label class="block font-medium text-normal text-gray-700"
-                                            for="home_firstname">Prenume</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="firstname" id="firstname" placeholder="Mihai" required>
-                                    </div>
 
-                                    <div>
-                                        <label class="block font-medium text-normal text-gray-700" for="home_email">
-                                            E-mail</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="email" name="email_address" id="email_address" placeholder="mihai.ionescu@example.com" required>
-                                    </div>
+                          <form id="home_free_demo" action="contact_submission/" method="POST">
+                              <input type="hidden" name="csrfmiddlewaretoken" value="RDogNMaMgFbPpRXfbECcoeGGgCoi1iCdFp4jQbv25A40thYTAdn9xDA292cfBqu1">
+                              <div>
+                                  <div>
+                                      <label class="block font-medium text-normal text-gray-700"
+                                          for="home_firstname">Prenume</label>
+                                      <input
+                                          class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                          type="text" name="firstname" id="home_firstname" placeholder="Mihai">
+                                  </div>
 
-                                    <div class="mb-8">
-                                        <label class="block font-medium text-normal text-gray-700" for="home_question">Mesaj</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="message" id="message" placeholder="Mesajul sau intrebarea ta" required>
-                                    </div>
-                                </div>
-                                <input class="button" type="submit" name="contact_submit" id="contact_submit" value="Trimite">
-                            </form>
+                                  <div>
+                                      <label class="block font-medium text-normal text-gray-700" for="home_email">
+                                          E-mail</label>
+                                      <input
+                                          class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                          type="email" name="email" id="home_email"
+                                          placeholder="mihai.ionescu@example.com">
+                                  </div>
+
+                                  <div class="mb-8">
+                                      <label class="block font-medium text-normal text-gray-700"
+                                          for="home_question">Mesaj</label>
+                                      <input
+                                          class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                          type="text" name="question" id="home_question"
+                                          placeholder="Mesajul sau intrebarea ta">
+                                  </div>
+
+                                  <div class="mb-8" style="text-align:center;">
+                                      <div class="g-recaptcha" data-sitekey="6LfCS4kiAAAAAGw--TKam-WE3SVPuv9IQKOCQyau"></div>
+                                  </div>
+                              </div>
+
+                              <input type="hidden" name="contact" id="home_demo_form" />
+
+                              <input class="button" type="submit" value="Trimite">
+                          </form>
                       </div>
                   </div>
               </div>
@@ -514,6 +529,5 @@
   </div>
 </div>
 </footer>
-<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=jj7btwmu&n=n1.ratufa.io"></script>
 </body>
 </html>
