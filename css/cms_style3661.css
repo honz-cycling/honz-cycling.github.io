@@ -1,0 +1,22 @@
+div.cms .cms-toolbar {
+  position: fixed;
+  bottom: 0 !important;
+  top: unset !important;
+}
+
+div.cms .cms-toolbar-item-logo {
+  margin-right: 0 !important;
+  background: url(https://www.wefitter.com/static/frontend/img/website/logo.svg);
+  background-repeat: no-repeat;
+  background-size: 107px;
+  width: 130px;
+  background-position: 10px 12px;
+}
+div.cms .cms-toolbar-item-logo a:before {
+  display: none;
+}
+
+div.cms .cms-toolbar-item-navigation .cms-toolbar-item-navigation-hover ul {
+  bottom: 46px !important;
+  top: unset !important;
+}
