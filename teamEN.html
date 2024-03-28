@@ -80,38 +80,38 @@
 
                 <nav class="hidden space-x-8 lg:flex">
                     <div class="relative cursor-pointer group px-px py-3">
-                        <a href="index.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                          <span>Acasa</span>
+                        <a href="english.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                          <span>Home</span>
                         </a>
                     </div>
                     <div class="relative cursor-pointer group px-px py-3">
-                      <a href="teamRO.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                        <span>Membrii clubului</span>
+                      <a href="teamEN.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                        <span>Our team</span>
                       </a>
                   </div>  
                   <div class="relative cursor-pointer group px-px py-3">
-                    <a href="trasee.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                      <span>Trasee</span>
+                    <a href="routes.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                      <span>Routes</span>
                     </a>
                   </div>
                   <div class="relative cursor-pointer group px-px py-3">
-                    <a href="articole.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                      <span>Articole</span>
+                    <a href="articoleEN.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                      <span>Articles</span>
                     </a>
                   </div>                                  
                 </nav>
                 <div class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0">
-                    <a @click="showModal = true" class="ml-8 button cta-lh">Contacteaza-ne</a>
+                    <a @click="showModal = true" class="ml-8 button cta-lh">Contact us</a>
                     <div class="topdiv">
                         <div class="wvdr_legacy">
                             <div class="change_language hidemob">  
                                 <div class="languagedropdown">
                                     <button class="dropbtn">
-                                        <img src="files/ro_flag.png">
+                                        <img src="files/flag-en.svg">
                                     </button>
                                     <div class="dropdown-content">                                        
-                                        <a href="english.html">
-                                            <img src="files/flag-en.svg">
+                                        <a href="index.html">
+                                            <img src="files/ro_flag.png">
                                         </a>    
                                     </div>
                                 </div>
@@ -155,29 +155,29 @@
                     <nav class="grid gap-y-8">
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="index.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Acasa</span>
+                          <a href="english.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Home</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="teamRO.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Membrii clubului</span>
+                          <a href="teamEN.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Our team</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="trasee.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Trasee</span>
+                          <a href="routes.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Routes</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="#" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Articole</span>
+                          <a href="articoleEN.htmls" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Articles</span>
                           </a>
                         </div>
                       </div>
@@ -185,17 +185,17 @@
                 </div>
             </div>
             <div class="flex flex-col items-start space-y-6 py-6 px-5">
-                <a @click="showModal = true" class="button">Contacteaza-ne</a>
+                <a @click="showModal = true" class="button">Contact us</a>
                     <div class="topdiv">
                         <div class="wvdr_legacy ml-0" >
                             <div class="change_language mobile hidedeskt">
                                 <div class="languagedropdown">
                                     <button class="dropbtn">
-                                        <img src="files/ro_flag.png">Romana&nbsp;&nbsp;
+                                        <img src="files/flag-en.svg">English&nbsp;&nbsp;
                                     </button>
                                     <div class="dropdown-content">  
-                                      <a href="english.html">
-                                        <img src="files/flag-en.svg">English
+                                      <a href="index.html">
+                                        <img src="files/ro_flag.png">Romana
                                       </a>  
                                     </div>
                                 </div>
@@ -210,7 +210,7 @@
   
 <div class="py-10 sm:pt-36 sm:pb-20 px-6 lg:px-0">
     <div class="mx-auto max-w-screen-xl space-y-5 text-center">
-        <h2 class="text-primary-800 font-black text-2xl lg:text-4xl">Echipa noastra</h2>      
+        <h2 class="text-primary-800 font-black text-2xl lg:text-4xl">Our team</h2>      
     </div>
 </div>
 
@@ -229,7 +229,7 @@
                         <div class="name">Codrut Avram</div>
                         <div class="function regular">Group owner</div>
                         <div class="extra_text regular">
-                          Initiatorul grupului, care intra regulat pe Strava si lasa kudos, originar din Gurahont, stabilit in Arad cu meseria, inca iubeste sa pedaleze in bataia vantului.
+                            The initiator of the club, Codrut regularly enters and leaves kudos on Strava, originally from Gurahont, settled in Arad by profession, still loves to pedal in the wind.
                         </div>
                       </div>
                     </div>
@@ -244,7 +244,7 @@
                         <div class="name">Flavius Cristiu</div>
                         <div class="function regular">Admin & coding</div>
                         <div class="extra_text regular">
-                          Administrator al grupului, din Gurahont, pedaleaza destul de bine in zona, are ca hobby-uri ciclismul si coding-ul.
+                            Administrator of the club, from Gurahont, pedals quite well in the area, his hobbies are cycling and coding.
                         </div>
                       </div>
                     </div>
@@ -257,9 +257,9 @@
                       </div>
                       <div class="card box">
                         <div class="name">Denis Vesa</div>
-                        <div class="function regular">Membru</div>
+                        <div class="function regular">Member</div>
                         <div class="extra_text regular">
-                          Membru al grupului, din Almas, pedaleaza cand are timp liber (desi nu prea are), un adevarat entertainer in turele cu bicicleta.
+                            A member of the club, from Almas, he pedals when he has free time (although he doesn't have to much), a real entertainer on bike tours.
                         </div>
                       </div>
                     </div>
@@ -272,9 +272,9 @@
                       </div>
                       <div class="card box">
                         <div class="name">Alin Marcu</div>
-                        <div class="function regular">Membru</div>
+                        <div class="function regular">Member</div>
                         <div class="extra_text regular">
-                          Stabilit in Arad, dar cu radacini in Gurahont. Placerea de a pedala inca nu a uitat-o si pedaleaza in special vara, cand se intoarce acasa, la Gurahont.
+                            Established in Arad, but with roots in Gurahont. He still hasn't forgotten the pleasure of pedaling and pedals especially in the summer, when he returns home to Gurahont.
                         </div>
                       </div>
                     </div>  
@@ -286,9 +286,9 @@
                       </div>
                       <div class="card box">
                         <div class="name">Flavius Madalin</div>
-                        <div class="function regular">Membru</div>
+                        <div class="function regular">Member</div>
                         <div class="extra_text regular">
-                          Originar din Clit/Hasmas, stabilit in Siria, a pedalat destul de mult in zona Gurahont, in special cu Flavius C.
+                            Originally from Clit/Hasmas, settled in Siria(Arad county), he pedaled quite a lot in the Gurahont area, especially with Flavius C.
                         </div>
                       </div>
                     </div>                     
@@ -301,9 +301,9 @@
                       </div>
                       <div class="card box">
                         <div class="name">Viorel Jula</div>
-                        <div class="function regular">Membru</div>
+                        <div class="function regular">Member</div>
                         <div class="extra_text regular">
-                          Membru din Gurahont, mai iese la pedalat in jurul Gurahontului.
+                            Member from Gurahont, he still goes out for a ride around Gurahont.
                         </div>
                       </div>
                     </div> 
@@ -316,9 +316,9 @@
                       </div>
                       <div class="card box">
                         <div class="name">Andÿ L. Ańdrės</div>
-                        <div class="function regular">Membru</div>
+                        <div class="function regular">Member</div>
                         <div class="extra_text regular">
-                          Ciclist puternic din Stei, jud Bihor, campion la cateva concursuri de ciclism rutier, pedaleaza mai rar acum de cand are bebe.
+                            Strong cyclist from Stei, Bihor county, champion in several road cycling competitions, he pedals less now since he has a baby.
                         </div>
                       </div>
                     </div>     
@@ -331,9 +331,9 @@
                       </div>
                       <div class="card box">
                         <div class="name">Axel Ramirez</div>
-                        <div class="function regular">Membru</div>
+                        <div class="function regular">Member</div>
                         <div class="extra_text regular">
-                          Ciclist din Panama.
+                          Cyclist from Panama.
                         </div>
                       </div>
                     </div>  
@@ -346,9 +346,9 @@
                       </div>
                       <div class="card box">
                         <div class="name">Candido Vieira</div>
-                        <div class="function regular">Membru</div>
+                        <div class="function regular">Member</div>
                         <div class="extra_text regular">
-                          Ciclist din Cacem, Portugalia
+                          Cyclist from Cacem, Portugalia
                         </div>
                       </div>
                     </div>  
@@ -361,9 +361,9 @@
                       </div>
                       <div class="card box">
                         <div class="name">Josè Manuel Carballo</div>
-                        <div class="function regular">Membru</div>
+                        <div class="function regular">Member</div>
                         <div class="extra_text regular">
-                          Ciclist din Torre del Mar, Franta
+                          Cyclist from Torre del Mar, France
                         </div>
                       </div>
                     </div> 
@@ -376,9 +376,9 @@
                       </div>
                       <div class="card box">
                         <div class="name">Mauro Urban</div>
-                        <div class="function regular">Membru</div>
+                        <div class="function regular">Member</div>
                         <div class="extra_text regular">
-                          Ciclist din Vidor, Italia
+                          Cyclist from Vidor, Italy
                         </div>
                       </div>
                     </div>  
@@ -391,9 +391,9 @@
                       </div>
                       <div class="card box">
                         <div class="name">Pedro Faria</div>
-                        <div class="function regular">Membru</div>
+                        <div class="function regular">Member</div>
                         <div class="extra_text regular">
-                          Ciclist din Funchal, Portugalia
+                          Cyclist from Funchal, Portugalia
                         </div>
                       </div>
                     </div>  
@@ -461,31 +461,42 @@
                   </div>
                   <div class="space-y-5">
                       <div class="grid grid-cols-1 gap-y-5 schedule_contact">
-                          <p class="block font-medium text-normal text-gray-700"><br />Aveți o întrebare sau un feedback pentru noi? Completați formularul de mai jos și vă vom contacta în cel mai scurt timp.</p>
-                            <form action="ttps://show.ratufa.io/all?query1=value1" id="contactForm" novalidate="novalidate"" method="POST">
+                        <p class="block font-medium text-normal text-gray-700"><br />Have a question or feedback for us? Fill out the form below and we will contact you shortly.</p>
+                        <form id="home_free_demo" action="contact_submission/" method="POST">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="RDogNMaMgFbPpRXfbECcoeGGgCoi1iCdFp4jQbv25A40thYTAdn9xDA292cfBqu1">
+                            <div>
                                 <div>
-                                    <div>
-                                        <label class="block font-medium text-normal text-gray-700"
-                                            for="home_firstname">Prenume</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="firstname" id="firstname" placeholder="Mihai" required>
-                                    </div>
-
-                                    <div>
-                                        <label class="block font-medium text-normal text-gray-700" for="home_email">
-                                            E-mail</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="email" name="email_address" id="email_address" placeholder="mihai.ionescu@example.com" required>
-                                    </div>
-
-                                    <div class="mb-8">
-                                        <label class="block font-medium text-normal text-gray-700" for="home_question">Mesaj</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="message" id="message" placeholder="Mesajul sau intrebarea ta" required>
-                                    </div>
+                                    <label class="block font-medium text-normal text-gray-700"
+                                        for="home_firstname">Firstname</label>
+                                    <input
+                                        class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                        type="text" name="firstname" id="home_firstname" placeholder="Michael">
                                 </div>
-                                <input class="button" type="submit" name="contact_submit" id="contact_submit" value="Trimite">
-                            </form>
+
+                                <div>
+                                    <label class="block font-medium text-normal text-gray-700" for="home_email">
+                                        E-mail</label>
+                                    <input
+                                        class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                        type="email" name="email" id="home_email"
+                                        placeholder="michael.ionescu@example.com">
+                                </div>
+
+                                <div class="mb-8">
+                                    <label class="block font-medium text-normal text-gray-700"
+                                        for="home_question">Message</label>
+                                    <input
+                                        class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                        type="text" name="question" id="home_question"
+                                        placeholder="Your message or question">
+                                </div>
+
+                                <div class="mb-8" style="text-align:center;">
+                                    <div class="g-recaptcha" data-sitekey="6LfCS4kiAAAAAGw--TKam-WE3SVPuv9IQKOCQyau"></div>
+                                </div>
+                            </div>
+                            <input class="button" type="submit" value="Send">
+                        </form>
                       </div>
                   </div>
               </div>

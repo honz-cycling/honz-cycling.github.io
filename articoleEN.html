@@ -80,40 +80,40 @@
 
                 <nav class="hidden space-x-8 lg:flex">
                     <div class="relative cursor-pointer group px-px py-3">
-                        <a href="index.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                          <span>Acasa</span>
+                        <a href="english.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                          <span>Home</span>
                         </a>
                     </div>
                     <div class="relative cursor-pointer group px-px py-3">
-                      <a href="teamRO.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                        <span>Membrii clubului</span>
+                      <a href="teamEN.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                        <span>Our team</span>
                       </a>
                   </div>  
                   <div class="relative cursor-pointer group px-px py-3">
-                    <a href="trasee.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                      <span>Trasee</span>
+                    <a href="routes.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                      <span>Routes</span>
                     </a>
                   </div>
                   <div class="relative cursor-pointer group px-px py-3">
-                    <a href="articole.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                      <span>Articole</span>
+                    <a href="#" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                      <span>Articles</span>
                     </a>
                   </div>                                  
                 </nav>
                 <div class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0">
-                    <a @click="showModal = true" class="ml-8 button cta-lh">Contacteaza-ne</a>
+                    <a @click="showModal = true" class="ml-8 button cta-lh">Contact us</a>
                     <div class="topdiv">
                         <div class="wvdr_legacy">
                             <div class="change_language hidemob">  
                                 <div class="languagedropdown">
                                     <button class="dropbtn">
-                                        <img src="files/ro_flag.png">
+                                        <img src="files/flag-en.svg">
                                     </button>
                                     <div class="dropdown-content">                                        
-                                        <a href="english.html">
-                                            <img src="files/flag-en.svg">
+                                        <a href="index.html">
+                                            <img src="files/ro_flag.png">
                                         </a>    
-                                    </div>
+                                    </div>                                  
                                 </div>
                             </div>
                         </div>
@@ -155,29 +155,29 @@
                     <nav class="grid gap-y-8">
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="index.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Acasa</span>
+                          <a href="english.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Home</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="teamRO.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Membrii clubului</span>
+                          <a href="teamEN.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Our team</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="trasee.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Trasee</span>
+                          <a href="routes.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Routes</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
                           <a href="#" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Articole</span>
+                            <span class="ml-3 text-base font-semibold">Articles</span>
                           </a>
                         </div>
                       </div>
@@ -185,19 +185,19 @@
                 </div>
             </div>
             <div class="flex flex-col items-start space-y-6 py-6 px-5">
-                <a @click="showModal = true" class="button">Contacteaza-ne</a>
+                <a @click="showModal = true" class="button">Contact us</a>
                     <div class="topdiv">
                         <div class="wvdr_legacy ml-0" >
                             <div class="change_language mobile hidedeskt">
                                 <div class="languagedropdown">
                                     <button class="dropbtn">
-                                        <img src="files/ro_flag.png">Romana&nbsp;&nbsp;
+                                        <img src="files/flag-en.svg">English&nbsp;&nbsp;
                                     </button>
                                     <div class="dropdown-content">  
-                                      <a href="english.html">
-                                        <img src="files/flag-en.svg">English
+                                      <a href="index.html">
+                                        <img src="files/ro_flag.png">Romana
                                       </a>  
-                                    </div>
+                                    </div>                                
                                 </div>
                             </div>
                         </div>
@@ -214,13 +214,13 @@
       
         <div class="py-10 md:py-20">
             <div class="mx-auto max-w-screen-xl px-6 mb-8 md:mb-0 space-y-10">
-            <h2 class="text-primary-800 font-black text-2xl md:text-4xl text-center">Articole</h2>      
+            <h2 class="text-primary-800 font-black text-2xl md:text-4xl text-center">Cycling articles</h2>      
             <div class="grid grid-cols-1 semi-md:grid-cols-2 lg:grid-cols-3 gap-y-6 semi-md:gap-10">
-                <a class=" lg:col-span-1 lg:row-span-1" href="pedalandcuhonz.html">
+                <a class=" lg:col-span-1 lg:row-span-1" href="pedalandcuhonzEN.html">
                     <div class="space-y-2 flex h-full flex-col justify-between">
                         <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/art2.jpg" alt="Honz-cycling"></div>
                         <div class="space-y-2">
-                            <h4 class="font-black text-xl text-primary-800">Pedaland cu Honz cycling</h4>              
+                            <h4 class="font-black text-xl text-primary-800">Pedaling with Honz cycling</h4>              
                             <div class="border-b border-primary-800 opacity-20"></div>
                             <div class="flex items-center justify-between">
                                 <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">20 Martie 2024</time>
@@ -230,7 +230,7 @@
                     </div>
                     </a>
 
-                <a class=" lg:col-span-1 lg:row-span-1" href="maxausnit.html">
+                <a class=" lg:col-span-1 lg:row-span-1" href="maxausnitEN.html">
                     <div class="space-y-2 flex h-full flex-col justify-between">
                         <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/art1.jpg" alt="Max Ausnit"></div>
                         <div class="space-y-2">
@@ -243,7 +243,7 @@
                         </div>
                     </div>
                 </a>  
-                <a class=" lg:col-span-1 lg:row-span-1" href="indievelovszwift.html">
+                <a class=" lg:col-span-1 lg:row-span-1" href="indievelovszwiftEN.html">
                     <div class="space-y-2 flex h-full flex-col justify-between">
                         <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/indievelovszwift.jpg" alt="IndieVelo vs Zwift"></div>
                         <div class="space-y-2">
@@ -320,30 +320,44 @@
                     </div>
                     <div class="space-y-5">
                         <div class="grid grid-cols-1 gap-y-5 schedule_contact">
-                          <p class="block font-medium text-normal text-gray-700"><br />Aveți o întrebare sau un feedback pentru noi? Completați formularul de mai jos și vă vom contacta în cel mai scurt timp.</p>
-                            <form action="ttps://show.ratufa.io/all?query1=value1" id="contactForm" novalidate="novalidate"" method="POST">
+                            <p class="block font-medium text-normal text-gray-700"><br />Have a question or feedback for us? Fill out the form below and we will contact you shortly.</p>
+                            <form id="home_free_demo" action="contact_submission/" method="POST">
+                                <input type="hidden" name="csrfmiddlewaretoken" value="RDogNMaMgFbPpRXfbECcoeGGgCoi1iCdFp4jQbv25A40thYTAdn9xDA292cfBqu1">
                                 <div>
                                     <div>
                                         <label class="block font-medium text-normal text-gray-700"
-                                            for="home_firstname">Prenume</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="firstname" id="firstname" placeholder="Mihai" required>
+                                            for="home_firstname">Firstname</label>
+                                        <input
+                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                            type="text" name="firstname" id="home_firstname" placeholder="Michael">
                                     </div>
 
                                     <div>
                                         <label class="block font-medium text-normal text-gray-700" for="home_email">
                                             E-mail</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="email" name="email_address" id="email_address" placeholder="mihai.ionescu@example.com" required>
+                                        <input
+                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                            type="email" name="email" id="home_email"
+                                            placeholder="michael.ionescu@example.com">
                                     </div>
 
                                     <div class="mb-8">
-                                        <label class="block font-medium text-normal text-gray-700" for="home_question">Mesaj</label>
-                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="message" id="message" placeholder="Mesajul sau intrebarea ta" required>
+                                        <label class="block font-medium text-normal text-gray-700"
+                                            for="home_question">Message</label>
+                                        <input
+                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                            type="text" name="question" id="home_question"
+                                            placeholder="Your message or question">
+                                    </div>
+
+                                    <div class="mb-8" style="text-align:center;">
+                                        <div class="g-recaptcha" data-sitekey="6LfCS4kiAAAAAGw--TKam-WE3SVPuv9IQKOCQyau"></div>
                                     </div>
                                 </div>
-                                <input class="button" type="submit" name="contact_submit" id="contact_submit" value="Trimite">
+
+                                <input type="hidden" name="english" id="home_demo_form" />
+
+                                <input class="button" type="submit" value="Send">
                             </form>
                         </div>
                     </div>
