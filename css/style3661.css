@@ -829,7 +829,7 @@ select {
   padding-bottom: 0.5rem;
   font-weight: 600;
   --tw-text-opacity: 1;
-  color: rgb(0 170 228/var(--tw-text-opacity));
+  color: rgb(0 0 0/var(--tw-text-opacity));
 }
 
 .arrow-button-primary:before {
