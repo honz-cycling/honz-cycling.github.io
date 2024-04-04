@@ -2643,10 +2643,12 @@ select {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  text-shadow: 0 0 4px black;
 }
 
 .text-xl * {
   font-size: inherit;
+  text-shadow: 0 0 4px black;
 }
 
 .text-lg {
@@ -2690,6 +2692,7 @@ select {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+  text-shadow: 0 0 5px black;
 }
 
 .text-3xl * {
@@ -2699,6 +2702,7 @@ select {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+  text-shadow: 0 0 5px black;
 }
 
 .text-4xl * {
@@ -2708,6 +2712,7 @@ select {
 .text-5xl {
   font-size: 3.125rem;
   line-height: 3.25rem;
+  text-shadow: 0 0 7px black;
 }
 
 .text-5xl * {
@@ -2740,7 +2745,7 @@ select {
 }
 
 .font-black {
-  font-weight: 900;
+  font-weight: 300;
 }
 
 .font-black * {
@@ -2804,6 +2809,7 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255/var(--tw-text-opacity));
+  text-shadow: 0 0 5px black;
 }
 
 .text-gray-400 {
@@ -3374,6 +3380,7 @@ select {
   .semi-md\:text-5xl {
     font-size: 3.125rem;
     line-height: 3.25rem;
+    text-shadow: 0 0 7px black;
   }
 }
 @media (min-width: 768px) {
@@ -3813,10 +3820,12 @@ select {
   .lg\:text-5xl {
     font-size: 3.125rem;
     line-height: 3.25rem;
+    text-shadow: 0 0 7px black;
   }
   .lg\:text-5xl-large {
     font-size: 3.125rem;
     line-height: 4.5rem;
+    text-shadow: 0 0 7px black;
   }
   .lg\:text-quote {
     font-size: 1.875rem;
