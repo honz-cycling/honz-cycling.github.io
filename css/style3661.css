@@ -1713,7 +1713,7 @@ select {
 
 .bg-primary-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 170 228/var(--tw-bg-opacity));
+  background-color: rgb(255 255 255/var(--tw-bg-opacity));
   background-image: url("../files/bg-5.jpg");
   background-position: center;
   background-repeat: no-repeat;
