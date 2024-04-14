@@ -35,9 +35,14 @@
 <link rel="stylesheet" href="css/vendor_style3661.css?v=2.0">
 <link rel="stylesheet" href="css/cms_style3661.css?v=2.0" media="only screen">
 <link rel="stylesheet" href="css/website_style3661.css?v=2.0">
+<link rel="stylesheet" href="css/carousel.css">
 <script src="js/alpine.js" defer></script>
+<script src="js/script.js" defer></script>
 <script src="js/website_app3661.js?v=2.0" defer></script>
 <script type="text/javascript" src="js/slick3661.js?v=2.0" defer></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
 <!-- Google Tag Manager -->
 <script>(function (w, d, s, l, i) {
@@ -108,7 +113,12 @@
                     <a href="articole.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
                       <span>Articole</span>
                     </a>
-                  </div>                                  
+                  </div>   
+                  <div class="relative cursor-pointer group px-px py-3">
+                    <a href="#" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                      <span>Antrenamente</span>
+                    </a>
+                  </div>                                                   
                 </nav>
                 <div class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0">
                     <a @click="showModal = true" class="ml-8 button cta-lh">Contacteaza-ne</a>
@@ -191,6 +201,13 @@
                           </a>
                         </div>
                       </div>
+                      <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
+                        <div class="flex items-center justify-between">
+                          <a href="#" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Antrenamente</span>
+                          </a>
+                        </div>
+                      </div>                          
                     </nav>
                 </div>
             </div>
@@ -226,68 +243,49 @@
             <h1 class="text-primary-800 font-black text-2xl lg:text-4xl">Tura de Dealu Mare (BH)</h1>
           </div>
           <div>
-            <div
-              class="text-sm lg:text-lg font-light bg-gray-500 px-2 lg:px-4 py-1 text-white inline-block rounded uppercase">
-              by Flavius Cristiu
-            </div>
-          </div>          
-          <div class="grid grid-cols-1 semi-md:grid-cols-2  gap-10 semi-md:gap-20  items-center">
-            <div class="block semi-md:block space-y-5 semi-md:space-y-5">                
-              <div class="text-lg space-y-2  text-primary-800 ">
-                <p>Într-o Duminică însorită, a şaptea zi a lui Aprilie, însoţit de câțiva prieteni din clubul Honz-cycling ne-am propus să ne aventurăm la o tură de ciclism pe o șosea de munte. Felix şi Marius au venit pe biciclete din Sebiş, până-n Gurahonţ, iar în Gurahonţ ne-am întâlnit cu toţii, Felix, Marius, Flavius, Florin si eu. Cu bicicletele pregătite (mai puţin bicicleta mea, care făcea opturi pe roata din spate şi a lui Flavius, care nu schimba foile pe faţă) și sufletele pline de entuziasm, am pornit în această călătorie spre Dealu Mare, împreună, fără să știm ce ne rezervă drumul.</p>
-              </div>
-              <div class="flex space-x-8 items-center"></div>
-            </div>            
-            <div>
-                <img src="files/articles/dealumare02.jpg" class="w-full" alt="" loading="eager">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 semi-md:grid-cols-2  gap-10 semi-md:gap-20  items-center">
-            <div>
-                <img src="files/articles/dealumare01.jpg" class="w-full" alt="" loading="eager">
-            </div>
-            
-            <div class="block semi-md:block space-y-5 semi-md:space-y-5">                
-                <div class="text-lg space-y-2  text-primary-800 ">
-                    <p>Pentru noi, nu totul este despre pedalatul intens.</p><p>Ne-am oprit pentru primul coffee break, la Varfurile, la Pensiunea Anamaria.<br />Atmosfera relaxată, buna dispoziţie și camaraderia dintre noi adăugau un plus de bucurie călătoriei noastre.</p>
-                </div>
-                <div class="flex space-x-8 items-center"></div>
-            </div>
-          </div>
-          <div class="grid grid-cols-1 semi-md:grid-cols-2  gap-10 semi-md:gap-20  items-center">
-            <div class="block semi-md:block space-y-5 semi-md:space-y-5">                
-              <div class="text-lg space-y-2  text-primary-800 "><p>Am pornit apoi spre Dealu Mare</p>
-                  <p>Cu toate că peisajele de primăvară erau uluitoare, şoseaua perfectă, pomii înfloriţi care lăsau petalele florilor să danseze în adierea vântului, căţărarea în sine ne-a pus la încercare abilitățile de cicliști, rezistența și determinarea. Însă fiecare pedală până la vârful dealului a meritat, fiind recompensată cu o panoramă spectaculoasă și un sentiment de realizare.</p>
-              </div>
-              <div class="flex space-x-8 items-center"></div>
-            </div>            
-            <div>
-                <img src="files/articles/dealumare03.jpg" class="w-full" alt="" loading="eager">
-            </div>
-          </div>                      
-          <div class="grid grid-cols-1 semi-md:grid-cols-2  gap-10 semi-md:gap-20  items-center">
-            <div>
-                <img src="files/articles/dealumare04.jpg" class="w-full" alt="" loading="eager">
-            </div>
-            
-            <div class="block semi-md:block space-y-5 semi-md:space-y-5">                
-                <div class="text-lg space-y-2  text-primary-800 ">
-                    <p>Flavius a avut probleme cu schimbarea foilor, iar lanţul îi tot sărea pe pinioane, Felix a luat-o înainte, cum face el de obicei, iar Florin şi cu mine ne bucuram de traseu şi de peisaje. Satisfacţia a fost mare pentru toţi când am ajuns în vârf, dar n-am poposit acolo, întorcându-ne spre coborârea de pe Dealul Mare.</p>
-                </div>
-                <div class="flex space-x-8 items-center"></div>
-            </div>
+            <div class="text-sm lg:text-lg font-light bg-gpx-800 px-2 lg:px-4 py-1 text-white inline-block rounded">07.04.2024</div>
           </div>  
+
           <div class="text-lg space-y-2  text-primary-800 ">
-            <p>Pe coborâre, eu am mers încet, maxim 33km/h din cauza opturilor de pe roata spate. Toţi ceilalţi au coborât vitejeşte, întrecându-se cu TIR-urile şi între ei.</p>
-            <p>Pe coborârea dinspre Vârfurile, Felix a derapat într-o curbă şi a făcut cunoştinţă cu parapetul. Din fericire, a scăpat ieftin, puţin şifonat şi cu câteva copcii.</p>
-            <p>Ciclismul este totuşi un sport periculos şi toţi urăm căzăturile.</p>
-            <p>In Almaş, Florin a făcut pană, că aşa are el ghinion cu penele de cauciuc, iar tura lui s-a încheiat acolo.</p>
-          </div>
-          <div class="text-lg space-y-2  text-primary-800 ">
-            <p>În final, tura de Dealu Mare a fost şi va rămâne memorabilă, o tură de ciclism cu prietenii, pe o șosea de munte, şi nu doar o călătorie fizică, ci și o călătorie cu aventuri, păţanii şi provocări. A fost un moment de conectare cu natura, cu propriile noastre limite și între noi, cei care am făcut această aventură de neuitat.
-            </p>
-          </div>
+            <p>Într-o Duminică însorită, a şaptea zi a lui Aprilie, însoţit de câțiva prieteni din clubul Honz-cycling ne-am propus să ne aventurăm la o tură de ciclism pe o șosea de munte. Felix şi Marius au venit pe biciclete din Sebiş, până-n Gurahonţ, iar în Gurahonţ ne-am întâlnit cu toţii, Felix, Marius, Flavius, Florin si eu. Cu bicicletele pregătite (mai puţin bicicleta mea, care făcea opturi pe roata din spate şi a lui Flavius, care nu schimba foile pe faţă) și sufletele pline de entuziasm, am pornit în această călătorie spre Dealu Mare, împreună, fără să știm ce ne rezervă drumul.</p>
+            <p>Pentru noi, nu totul este despre pedalatul intens. Ne-am oprit pentru primul coffee break, la Vârfurile, la pensiunea Anamaria. Atmosfera relaxată, buna dispoziţie și camaraderia dintre noi adăugau un plus de bucurie călătoriei noastre.</p>
+            <p>Am pornit apoi spre Dealu Mare. Cu toate că peisajele de primăvară erau uluitoare, şoseaua perfectă, pomii înfloriţi care lăsau petalele florilor să danseze în adierea vântului, căţărarea în sine ne-a pus la încercare abilitățile de cicliști, rezistența și determinarea. Însă fiecare pedală până la vârful dealului a meritat, fiind recompensată cu o panoramă spectaculoasă și un sentiment de realizare.</p>
+            <p>Flavius a avut probleme cu schimbarea foilor, iar lanţul îi tot sărea pe pinioane, Felix a luat-o înainte, cum face el de obicei, iar Florin şi cu mine ne bucuram de traseu şi de peisaje. Satisfacţia a fost mare pentru toţi când am ajuns în vârf, dar n-am poposit acolo, întorcându-ne spre coborârea de pe Dealul Mare.</p>
+            <p>Pe coborâre, eu am mers încet, maxim 33km/h din cauza opturilor de pe roata spate. Toţi ceilalţi au coborât vitejeşte, întrecându-se cu TIR-urile şi între ei. Pe coborârea dinspre Vârfurile, Felix a derapat într-o curbă şi a făcut cunoştinţă cu parapetul. Din fericire, a scăpat ieftin, puţin şifonat şi cu câteva copcii. Ciclismul este totuşi un sport periculos şi toţi urăm căzăturile. În Almaş, Florin a făcut pană, că aşa are el ghinion cu penele de cauciuc, iar tura lui s-a încheiat acolo. În final, tura de Dealu Mare a fost şi va rămâne memorabilă, o tură de ciclism cu prietenii, pe o șosea de munte, şi nu doar o călătorie fizică, ci și o călătorie cu aventuri, păţanii şi provocări. A fost un moment de conectare cu natura, cu propriile noastre limite și între noi, cei care am făcut această aventură de neuitat.</p>
+            <p>Participanti: Flavius, Florin, Felix, Marius şi Flavius</p>
+          </div> 
+          <main class="main2">
+            <div class="container">
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/dealumare01.jpg" data-fancybox="gallery" data-caption="La pensiunea Anamaria">
+                    <img src="files/articles/dealumare01.jpg" alt="Image Gallery">
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/dealumare02.jpg" data-fancybox="gallery" data-caption="Pe Tăcăşele">
+                    <img src="files/articles/dealumare02.jpg" alt="Image Gallery">
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/dealumare03.jpg" data-fancybox="gallery" data-caption="Pomi înfloriţi pe urcarea Dealu Mare">
+                    <img src="files/articles/dealumare03.jpg" alt="Image Gallery">
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/dealumare04.jpg" data-fancybox="gallery" data-caption="Băieţii aştia se caţărau cu spor">
+                    <img src="files/articles/dealumare04.jpg" alt="Image Gallery">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </main>
         </article> 
     </div>
   </div>
@@ -381,7 +379,7 @@
     </div>
 </div>
 <script>Fancybox.bind('[data-fancybox]', {
-    // Custom options for all galleries
+  // Custom options for all galleries
 });    
 </script>
 </main>

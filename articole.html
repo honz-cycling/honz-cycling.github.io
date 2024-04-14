@@ -98,7 +98,12 @@
                     <a href="articole.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
                       <span>Articole</span>
                     </a>
-                  </div>                                  
+                  </div>  
+                  <div class="relative cursor-pointer group px-px py-3">
+                    <a href="#" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                      <span>Antrenamente</span>
+                    </a>
+                  </div>                                                    
                 </nav>
                 <div class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0">
                     <a @click="showModal = true" class="ml-8 button cta-lh">Contacteaza-ne</a>
@@ -181,6 +186,13 @@
                           </a>
                         </div>
                       </div>
+                      <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
+                        <div class="flex items-center justify-between">
+                          <a href="#" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Antrenamente</span>
+                          </a>
+                        </div>
+                      </div>                       
                     </nav>
                 </div>
             </div>
@@ -261,12 +273,25 @@
                           <h4 class="font-black text-xl text-primary-800">Tura de Dealu Mare</h4>              
                           <div class="border-b border-primary-800 opacity-20"></div>
                           <div class="flex items-center justify-between">
-                              <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">10 Aprilie 2024</time>
+                              <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">07 Aprilie 2024</time>
                               <button class="arrow-button-primary">by Flavius Cristiu</button>
                           </div>
                       </div>
                   </div>
-              </a>                         
+                </a>  
+                <a class=" lg:col-span-1 lg:row-span-1" href="beliu01.html">
+                  <div class="space-y-2 flex h-full flex-col justify-between">
+                      <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/beliu01.jpg" alt="Tura de Beliu"></div>
+                      <div class="space-y-2">
+                          <h4 class="font-black text-xl text-primary-800">Tura de Beliu</h4>              
+                          <div class="border-b border-primary-800 opacity-20"></div>
+                          <div class="flex items-center justify-between">
+                              <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">13 Aprilie 2024</time>
+                              <button class="arrow-button-primary">by Flavius Cristiu</button>
+                          </div>
+                      </div>
+                  </div>
+                </a>                                        
             </div>
             
             </div>

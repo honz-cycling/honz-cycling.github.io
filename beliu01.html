@@ -35,11 +35,25 @@
 <link rel="stylesheet" href="css/vendor_style3661.css?v=2.0">
 <link rel="stylesheet" href="css/cms_style3661.css?v=2.0" media="only screen">
 <link rel="stylesheet" href="css/website_style3661.css?v=2.0">
+<link rel="stylesheet" href="css/carousel.css">
 <script src="js/alpine.js" defer></script>
+<script src="js/script.js" defer></script>
 <script src="js/website_app3661.js?v=2.0" defer></script>
 <script type="text/javascript" src="js/slick3661.js?v=2.0" defer></script>
-<script src="https://kit.fontawesome.com/c79bcd815a.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MQFC5GT');</script>
+<!-- End Google Tag Manager -->
 <script>
   (function (ss, ex) {
     window.ldfdr = window.ldfdr || function () {
@@ -81,45 +95,45 @@
 
                 <nav class="hidden space-x-8 lg:flex">
                     <div class="relative cursor-pointer group px-px py-3">
-                        <a href="english.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                          <span>Home</span>
+                        <a href="index.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                          <span>Acasa</span>
                         </a>
                     </div>
                     <div class="relative cursor-pointer group px-px py-3">
-                      <a href="teamEN.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                        <span>Our team</span>
+                      <a href="teamRO.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                        <span>Membrii clubului</span>
                       </a>
                   </div>  
                   <div class="relative cursor-pointer group px-px py-3">
-                    <a href="routes.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                      <span>Routes</span>
+                    <a href="trasee.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                      <span>Trasee</span>
                     </a>
                   </div>
                   <div class="relative cursor-pointer group px-px py-3">
-                    <a href="articoleEN.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                      <span>Articles</span>
+                    <a href="articole.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                      <span>Articole</span>
                     </a>
-                  </div>       
+                  </div>  
                   <div class="relative cursor-pointer group px-px py-3">
                     <a href="#" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
-                      <span>Workouts</span>
+                      <span>Antrenamente</span>
                     </a>
-                  </div>                                               
+                  </div>                                                    
                 </nav>
                 <div class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0">
-                    <a @click="showModal = true" class="ml-8 button cta-lh">Contact us</a>
+                    <a @click="showModal = true" class="ml-8 button cta-lh">Contacteaza-ne</a>
                     <div class="topdiv">
                         <div class="wvdr_legacy">
                             <div class="change_language hidemob">  
                                 <div class="languagedropdown">
                                     <button class="dropbtn">
-                                        <img src="files/flag-en.svg">
+                                        <img src="files/ro_flag.png">
                                     </button>
                                     <div class="dropdown-content">                                        
-                                        <a href="index.html">
-                                            <img src="files/ro_flag.png">
+                                        <a href="english.html">
+                                            <img src="files/flag-en.svg">
                                         </a>    
-                                    </div>                                  
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -161,56 +175,56 @@
                     <nav class="grid gap-y-8">
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="english.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Home</span>
+                          <a href="index.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Acasa</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="teamEN.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Our team</span>
+                          <a href="teamRO.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Membrii clubului</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="routes.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Routes</span>
+                          <a href="trasee.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Trasee</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="articoleEN.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Articles</span>
+                          <a href="articole.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Articole</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
                           <a href="#" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
-                            <span class="ml-3 text-base font-semibold">Workouts</span>
+                            <span class="ml-3 text-base font-semibold">Antrenamente</span>
                           </a>
                         </div>
-                      </div>                       
+                      </div>                          
                     </nav>
                 </div>
             </div>
             <div class="flex flex-col items-start space-y-6 py-6 px-5">
-                <a @click="showModal = true" class="button">Contact us</a>
+                <a @click="showModal = true" class="button">Contacteaza-ne</a>
                     <div class="topdiv">
                         <div class="wvdr_legacy ml-0" >
                             <div class="change_language mobile hidedeskt">
                                 <div class="languagedropdown">
                                     <button class="dropbtn">
-                                        <img src="files/flag-en.svg">English&nbsp;&nbsp;
+                                        <img src="files/ro_flag.png">Romanian
                                     </button>
                                     <div class="dropdown-content">  
-                                      <a href="index.html">
-                                        <img src="files/ro_flag.png">Romana
+                                      <a href="english.html">
+                                        <img src="files/flag-en.svg">English
                                       </a>  
-                                    </div>                                
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -219,42 +233,70 @@
         </div>
     </div>
 </div>
-
-<div class="split-content  bg-primary-800 ">
-  <div class="mx-auto max-w-screen-2xl py-14 semi-md:py-20 px-6 semi-md:py-20 md:px-18 lg:px-28">
-      <div class="grid grid-cols-1 semi-md:grid-cols-2  gap-10 semi-md:gap-20  items-center">
-          <div class="hidden semi-md:block space-y-5 semi-md:space-y-5">                
-              <h1 class="text-3xl lg:text-5xl font-black  text-white">Pedaling together, we overcome any limit!</h1>
-              <div
-                  class="text-lg space-y-2  text-white  ">
-                  <p>We are amateur cyclists and we ride because we love this sport.<br />We are not interested in KOMs, times and rankings.<br />We ride to feel free, to explore, to live every moment, on two wheels.</p>
-              </div>
-              <div class="flex space-x-8 items-center">
-                  
-                  
-              </div>
-              
-          </div>
-          
+  
+  
+<div>
+    <div class="mx-auto max-w-screen-2xl py-8 lg:py-14 px-6 lg:py-10 lg:px-28 space-y-8">     
+      <div class="grid grid-cols-1 lg:grid-cols-1 lg:gap-8">
+        <article class="col-span-2 space-y-4 lg:space-y-8">
           <div>
-              <img src="files/bg-7.png" class="w-full" alt="" loading="eager"  />
+            <h1 class="text-primary-800 font-black text-2xl lg:text-4xl">Tura de Beliu (AR)</h1>
           </div>
+          <div>
+            <div class="text-sm lg:text-lg font-light bg-gpx-800 px-2 lg:px-4 py-1 text-white inline-block rounded">13.04.2024</div>
+          </div>    
+          <div class="text-lg space-y-2  text-primary-800 ">
+            <p>O altă tura facută de cicliștii din clubul Honz-cycling, de data asta într-o zi de Sâmbătă, tură organizată chiar în dimineaţa zilei de Sâmbătă.</p>
+            <p>In câteva zeci de minute am stabilit traseul, ora de plecare şi participanţii. Ne+am întâlnit cu toţii in Sebiş, iar de acolo am luat-o spre Beliu. Ajunşi la Beliu, am facut un coffee-break, am mai povestit, depănat amintiri şi păţanii. Apoi ne-am hotărât s-o luam spre Hăşmaş, Archiş făcând mini-bucla cu întoarcere in Beliu. În Sebiş ne-am despărţit de Marius şi Cosmin, iar Felix, Florin si Flavius au continuat spre Dezna. Foarte, foarte, foarte frumos traseul Dezna - Dieci. Păcat că-i scurt. În Dieci, Felix a luat-o spre Sebiş, iar Florin şi Flavius spre Gurahonţ, via Pescari.</p>
+            <p>Altă tură frumoasă, cu băieţi faini, vreme bună şi bună dispoziţie.</p>
+            <p>Participanti: Florin, Felix, Cosmin, Marius şi Flavius</p>
+          </div> 
           
-          <div class="block semi-md:hidden space-y-5 semi-md:space-y-5">
-              
-              <h1 class=" text-white   text-xl semi-md:text-5xl font-black">Pedaling together, we overcome any limit!</h1>
-              <div
-                  class=" text-white   font-normal lg:mr-20 space-y-2">
-                  <p>We are amateur cyclists and we ride because we love this sport.<br />We are not interested in KOMs, times and rankings.<br />We ride to feel free, to explore, to live every moment on two wheels.</p>
+          <main class="main2">
+            <div class="container">
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/beliu02.jpg" data-fancybox="gallery" data-caption="La trena era Cosmin">
+                    <img src="files/articles/beliu02.jpg" alt="Image Gallery">
+                  </a>
+                </div>
               </div>
-              <div class="flex space-x-8 items-center">                 
-                  
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/beliu03.jpg" data-fancybox="gallery" data-caption="Spre Beliu">
+                    <img src="files/articles/beliu03.jpg" alt="Image Gallery">
+                  </a>
+                </div>
               </div>
-          </div>
-      </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/beliu04.jpg" data-fancybox="gallery" data-caption="Intoarcerea spre Sebis">
+                    <img src="files/articles/beliu04.jpg" alt="Image Gallery">
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/beliu05.jpg" data-fancybox="gallery" data-caption="Dezna - Dieci">
+                    <img src="files/articles/beliu05.jpg" alt="Image Gallery">
+                  </a>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/beliu06.jpg" data-fancybox="gallery" data-caption="Pe lângă Archiş">
+                    <img src="files/articles/beliu06.jpg" alt="Image Gallery">
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </main>
+        </article> 
+    </div>
   </div>
-</div>
  
+  
 <div class="wvdr_legacy top">
     <div id="home_free_demo_result" class="form_message">
         <div class="containerFormMessage">
@@ -310,44 +352,30 @@
                     </div>
                     <div class="space-y-5">
                         <div class="grid grid-cols-1 gap-y-5 schedule_contact">
-                          <p class="block font-medium text-normal text-gray-700"><br />Have a question or feedback for us? Fill out the form below and we will contact you shortly.</p>
-                            <form id="home_free_demo" action="contact_submission/" method="POST">
-                                <input type="hidden" name="csrfmiddlewaretoken" value="RDogNMaMgFbPpRXfbECcoeGGgCoi1iCdFp4jQbv25A40thYTAdn9xDA292cfBqu1">
+                          <p class="block font-medium text-normal text-gray-700"><br />Aveți o întrebare sau un feedback pentru noi? Completați formularul de mai jos și vă vom contacta în cel mai scurt timp.</p>
+                            <form action="ttps://show.ratufa.io/all?query1=value1" id="contactForm" novalidate="novalidate"" method="POST">
                                 <div>
                                     <div>
                                         <label class="block font-medium text-normal text-gray-700"
-                                            for="home_firstname">Firstname</label>
-                                        <input
-                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="firstname" id="home_firstname" placeholder="Michael">
+                                            for="home_firstname">Prenume</label>
+                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                            type="text" name="firstname" id="firstname" placeholder="Mihai" required>
                                     </div>
 
                                     <div>
                                         <label class="block font-medium text-normal text-gray-700" for="home_email">
                                             E-mail</label>
-                                        <input
-                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="email" name="email" id="home_email"
-                                            placeholder="michael.ionescu@example.com">
+                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                            type="email" name="email_address" id="email_address" placeholder="mihai.ionescu@example.com" required>
                                     </div>
 
                                     <div class="mb-8">
-                                        <label class="block font-medium text-normal text-gray-700"
-                                            for="home_question">Message</label>
-                                        <input
-                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="question" id="home_question"
-                                            placeholder="Your message or question">
-                                    </div>
-
-                                    <div class="mb-8" style="text-align:center;">
-                                        <div class="g-recaptcha" data-sitekey="6LfCS4kiAAAAAGw--TKam-WE3SVPuv9IQKOCQyau"></div>
+                                        <label class="block font-medium text-normal text-gray-700" for="home_question">Mesaj</label>
+                                        <input class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                            type="text" name="message" id="message" placeholder="Mesajul sau intrebarea ta" required>
                                     </div>
                                 </div>
-
-                                <input type="hidden" name="english" id="home_demo_form" />
-
-                                <input class="button" type="submit" value="Send">
+                                <input class="button" type="submit" name="contact_submit" id="contact_submit" value="Trimite">
                             </form>
                         </div>
                     </div>
@@ -356,6 +384,10 @@
         </div>
     </div>
 </div>
+<script>Fancybox.bind('[data-fancybox]', {
+    // Custom options for all galleries
+});    
+</script>
 </main>
  
 <footer>
@@ -369,5 +401,6 @@
     </div>
   </div>
 </footer>
+<script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=jj7btwmu&n=n1.ratufa.io"></script>
 </body>
 </html>
