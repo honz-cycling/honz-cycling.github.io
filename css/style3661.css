@@ -1717,6 +1717,7 @@ select {
   background-image: url("../files/bg-5.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  min-height:600px; 
 }
 
 .bg-primary-200 {
