@@ -37,8 +37,12 @@
 <link rel="stylesheet" href="css/website_style3661.css?v=2.0">
 <link rel="stylesheet" href="css/carousel.css">
 <script src="js/alpine.js" defer></script>
+<script src="js/script.js" defer></script>
 <script src="js/website_app3661.js?v=2.0" defer></script>
 <script type="text/javascript" src="js/slick3661.js?v=2.0" defer></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="css/fancybox.css" />
 
 <!-- Google Tag Manager -->
 <script>(function (w, d, s, l, i) {
@@ -69,7 +73,7 @@
 <main>
 <div x-data="{show: false, selected: null}" class="cstm_header ">
     <link rel="stylesheet" href="css/website_style3661.css?v=2.0">    
-    <div class="sticky opacity-96 inset-x-0 top-0 bg-white shadow-nav z-50">
+    <div class="sticky opacity-96 inset-x-0 top-0 bg-white shadow-nav z-10">
         <div class="mx-auto max-w-screen-2xl px-4 sm:px-0 sm:px-6">
             <div class="flex items-center justify-between py-5 lg:justify-start lg:space-x-10">
                 <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -109,7 +113,12 @@
                     <a href="articole.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
                       <span>Articole</span>
                     </a>
-                  </div>                                  
+                  </div>  
+                  <div class="relative cursor-pointer group px-px py-3">
+                    <a href="workouts.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
+                      <span>Antrenamente</span>
+                    </a>
+                  </div>                                                    
                 </nav>
                 <div class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0">
                     <a @click="showModal = true" class="ml-8 button cta-lh">Contacteaza-ne</a>
@@ -192,6 +201,13 @@
                           </a>
                         </div>
                       </div>
+                      <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
+                        <div class="flex items-center justify-between">
+                          <a href="workouts.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                            <span class="ml-3 text-base font-semibold">Antrenamente</span>
+                          </a>
+                        </div>
+                      </div>                          
                     </nav>
                 </div>
             </div>
@@ -224,74 +240,51 @@
       <div class="grid grid-cols-1 lg:grid-cols-1 lg:gap-8">
         <article class="col-span-2 space-y-4 lg:space-y-8">
           <div>
-            <h1 class="text-primary-800 font-black text-2xl lg:text-4xl">Tura de Beliu (AR)</h1>
+            <h1 class="text-primary-800 font-black text-2xl lg:text-4xl">Susani in doi (AR)</h1>
           </div>
           <div>
-            <div class="text-sm lg:text-lg font-light bg-gpx-800 px-2 lg:px-4 py-1 text-white inline-block rounded">13.04.2024</div>
+            <div class="text-sm lg:text-lg font-light bg-gpx-800 px-2 lg:px-4 py-1 text-white inline-block rounded">20.04.2024</div>
           </div>    
           <div class="text-lg space-y-2  text-primary-800 ">
-            <p>O altă tura facută de cicliștii din clubul Honz-cycling, de data asta într-o zi de Sâmbătă, tură organizată ad-hoc chiar în dimineaţa zilei de Sâmbătă.</p>
-            <p>Participanti: Florin, Felix, Cosmin, Marius şi Flavius</p>
-          </div>      
-          <div class="outter">
-            <div class="inner">
-              <div class="gallery">
-                <img class="img" src="files/articles/beliu02.jpg">
-                <img class="img" src="files/articles/beliu03.jpg" >
-                <img class="img" src="files/articles/beliu04.jpg" >  
-                <img class="img" src="files/articles/beliu05.jpg" >
-                <img class="img" src="files/articles/beliu06.jpg" >            
-              </div> 
-              <div class="popupborder">
-                <div id="popup" class="popup">
-                  <div class="left"></div>
-                  <div class="right"></div>
+            <p>Sâmbătă dimineaţa aveam pe agenda de lucru o grămadă de activităţi, dar am găsit motiv 😃 să fac o ieşire cu Florin. De data asta, doar noi doi într-o tură spre Susani.</p>
+            <p>Când ne-am întâlnit în Almaş, Florin mi-a prezentat noul său ciclocomputer Bryton Rider 860. Bun dispozitiv👍.</p>
+            <p>Nu ştiu de ce, dar zona dinspre Sebiş spre Susani îmi place foarte mult, mai ales când este soare. Urcare uşoară constantă, mult câmp liber, câţiva ciobani cu oile lor, şoseaua bună şi fără circulaţie. Iar la coborâre, pentru mine cel puţin, un adevărat paradis, unde poţi atinge viteze de 40+ km/h.<br />Am pedalat undeva în zona 3 şi 4, dar şi cu multe porţiuni la relax. Florin s-a ţinut foarte bine de mine, fiind pe zi ce trece tot mai puternic. Evident pe urcări mi-a dat drop 😃.</p>
+            <p>În Sebiş am testat noua pistă de biciclete, atât la dus cât şi la întors. Se pedalează uşor şi plăcut pe ea, dar ... încet.</p>
+            <p>A fost o tură plăcută, cu vreme bună şi cu picioarele încinse de efort.</p>
+            <p>Participanti: Florin şi Flavius</p>
+          </div> 
+          
+          <main class="main2">
+            <div class="container">
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/susani01.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/susani01.jpg" alt="Image Gallery">
+                  </a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="cont">
-            <div class="demo-gallery">
-              <ul id="lightgallery">
-                <li data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/1-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/1.jpg 800" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg"
-                data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
-                  <a href="">
-                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-1.jpg">
-                    <div class="demo-gallery-poster">
-                      <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
-                    </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/susani02.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/susani02.jpg" alt="Image Gallery">
                   </a>
-                </li>
-                <li data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/2-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/2.jpg 800" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg"
-                data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
-                  <a href="">
-                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-2.jpg">
-                    <div class="demo-gallery-poster">
-                      <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
-                    </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/susani03.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/susani03.jpg" alt="Image Gallery">
                   </a>
-                </li>
-                <li data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/13-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/13.jpg 800" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg"
-                data-sub-html="<h4>Sunset Serenity</h4><p>A gorgeous Sunset tonight captured at Coniston Water....</p>">
-                  <a href="">
-                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-13.jpg">
-                    <div class="demo-gallery-poster">
-                      <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
-                    </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/susani04.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/susani04.jpg" alt="Image Gallery">
                   </a>
-                </li>
-                <li data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-375.jpg 375, https://sachinchoolur.github.io/lightgallery.js/static/img/4-480.jpg 480, https://sachinchoolur.github.io/lightgallery.js/static/img/4.jpg 800" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg"
-                data-sub-html="<h4>Coniston Calmness</h4><p>Beautiful morning</p>">
-                  <a href="">
-                    <img class="img-responsive" src="https://sachinchoolur.github.io/lightgallery.js/static/img/thumb-4.jpg">
-                    <div class="demo-gallery-poster">
-                      <img src="https://sachinchoolur.github.io/lightgallery.js/static/img/zoom.png">
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>        
+                </div>
+              </div>
+          </main>
         </article> 
     </div>
   </div>
@@ -402,16 +395,5 @@
   </div>
 </footer>
 <script id="ratufa_loader" src="https://www.ratufa.io/c/ld.js?f=jj7btwmu&n=n1.ratufa.io"></script>
-<script src="https://cdn.jsdelivr.net/picturefill/2.3.1/picturefill.min.js"></script>
-<script src="https://cdn.rawgit.com/sachinchoolur/lightgallery.js/master/dist/js/lightgallery.js"></script>
-<script src="https://cdn.rawgit.com/sachinchoolur/lg-pager.js/master/dist/lg-pager.js"></script>
-<script src="https://cdn.rawgit.com/sachinchoolur/lg-autoplay.js/master/dist/lg-autoplay.js"></script>
-<script src="https://cdn.rawgit.com/sachinchoolur/lg-fullscreen.js/master/dist/lg-fullscreen.js"></script>
-<script src="https://cdn.rawgit.com/sachinchoolur/lg-zoom.js/master/dist/lg-zoom.js"></script>
-<script src="https://cdn.rawgit.com/sachinchoolur/lg-hash.js/master/dist/lg-hash.js"></script>
-<script src="https://cdn.rawgit.com/sachinchoolur/lg-share.js/master/dist/lg-share.js"></script>
-<script>
-    lightGallery(document.getElementById('lightgallery'));
-</script>
 </body>
 </html>
