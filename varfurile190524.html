@@ -35,10 +35,25 @@
 <link rel="stylesheet" href="css/vendor_style3661.css?v=2.0">
 <link rel="stylesheet" href="css/cms_style3661.css?v=2.0" media="only screen">
 <link rel="stylesheet" href="css/website_style3661.css?v=2.0">
+<link rel="stylesheet" href="css/carousel.css">
 <script src="js/alpine.js" defer></script>
+<script src="js/script.js" defer></script>
 <script src="js/website_app3661.js?v=2.0" defer></script>
 <script type="text/javascript" src="js/slick3661.js?v=2.0" defer></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="css/fancybox.css" />
 
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MQFC5GT');</script>
+<!-- End Google Tag Manager -->
 <script>
   (function (ss, ex) {
     window.ldfdr = window.ldfdr || function () {
@@ -58,7 +73,7 @@
 <main>
 <div x-data="{show: false, selected: null}" class="cstm_header ">
     <link rel="stylesheet" href="css/website_style3661.css?v=2.0">    
-    <div class="sticky opacity-96 inset-x-0 top-0 bg-white shadow-nav z-50">
+    <div class="sticky opacity-96 inset-x-0 top-0 bg-white shadow-nav z-10">
         <div class="mx-auto max-w-screen-2xl px-4 sm:px-0 sm:px-6">
             <div class="flex items-center justify-between py-5 lg:justify-start lg:space-x-10">
                 <div class="flex justify-start lg:w-0 lg:flex-1">
@@ -192,7 +207,7 @@
                             <span class="ml-3 text-base font-semibold">Antrenamente</span>
                           </a>
                         </div>
-                      </div>                       
+                      </div>                          
                     </nav>
                 </div>
             </div>
@@ -203,7 +218,7 @@
                             <div class="change_language mobile hidedeskt">
                                 <div class="languagedropdown">
                                     <button class="dropbtn">
-                                        <img src="files/ro_flag.png">Romana&nbsp;&nbsp;
+                                        <img src="files/ro_flag.png">Romanian
                                     </button>
                                     <div class="dropdown-content">  
                                       <a href="english.html">
@@ -221,111 +236,89 @@
   
   
 <div>
-    <div class="mx-auto max-w-screen-2xl py-8 lg:py-14 px-6 lg:py-10 lg:px-28 space-y-8">
-        <div class="py-10 md:py-20">
-            <div class="mx-auto max-w-screen-xl px-6 mb-8 md:mb-0 space-y-10">
-            <h2 class="text-primary-800 font-black text-2xl md:text-4xl text-center">Articole</h2>    
-            <div class="grid grid-cols-2 gap-4 md:flex items-center justify-center mdspace-x-4">
-              <a href="articole.html" class="border md:border-0 border-primary-500 inline-block font-semibold text-sm md:text-lg text-center p-2 md:px-8 md:py-2 rounded text-primary-500 md:text-primary-800">Articole ciclism
-              </a>
-              <a href="ture.html" class="border md:border-0 border-primary-500 inline-block font-semibold text-sm md:text-lg text-center p-2 md:px-8 md:py-2 rounded text-white bg-primary-500 ">Turele noastre
-              </a>              
-            </div>    
-            <div class="grid grid-cols-1 semi-md:grid-cols-2 lg:grid-cols-3 gap-y-6 semi-md:gap-10">   
-              <a class=" lg:col-span-1 lg:row-span-1" href="varfurile190524.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/Varfurile_190524/varfurile00.jpg" alt="Tura de Varfurile"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Tura de Varfurile</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">19 Mai 2024</time>
-                            <button class="arrow-button-primary">by Flavius Cristiu</button>
-                        </div>
-                    </div>
+    <div class="mx-auto max-w-screen-2xl py-8 lg:py-14 px-6 lg:py-10 lg:px-28 space-y-8">     
+      <div class="grid grid-cols-1 lg:grid-cols-1 lg:gap-8">
+        <article class="col-span-2 space-y-4 lg:space-y-8">
+          <div>
+            <h1 class="text-primary-800 font-black text-2xl lg:text-4xl">Tura de Vârfurile (AR)</h1>
+          </div>
+          <div>
+            <div class="text-sm lg:text-lg font-light bg-gpx-800 px-2 lg:px-4 py-1 text-white inline-block rounded">19.05.2024</div>
+          </div>    
+          <div class="text-lg space-y-2  text-primary-800 ">
+            <p>Zi de Dumincă, zi cu mult soare, zi călduroasă, zi perfectă pentru o tură de ciclism cu băieţii. Încă de Sâmbătă ne-am propus să facem o ieşire cu bicicletele Duminica. Florin, ca întotdeauna, dornic şi bucuros de o tură în grup. De altfel, n-am mai ieşit de ceva vreme împreună, aşa că, în Duminica propusă aveam ocazia. <br />
+            Băieţii din Sebiş puteau să ne însoţească doar după ora 12:30, iar asta a fost un motiv bun pentru mine şi Florin să mergem pe DN până in Sebiş şi să completăm formaţia în Sebiş.<br />
+            Medie de viteză bună, de 35km/h până-n Sebiş, o demonstraţie de forţă 💪🏻 din partea lui Florin.<br />
+            În Sebiş, ne-am mai învârtit puţin prin oraş, până s-au adunat baieţii (Felix, Marius şi Cosmin), iar mai apoi, am luat-o spre Vârfurile.<br />
+            Cer senin, poate prea cald pentru perioada asta, dar foarte fain de pedalat. Dupa Pleşcuţa, l-am pierdut pe Cosmin, care a ramas în urmă având ceva probleme cu confortul. De acolo, grupul nostru s-a cam spart, Marius a luat-o înainte, Florin l-a urmat, iar Felix şi cu mine ne-am întors după Cosmin. Din păcate, Cosmin nu a mai putut continua tura cu noi şi s-a întors spre casă 😒.Grupul nostru s-a reîntregit abia la Avram Iancu.<br />
+            Bineînţeles, la Vârfurile, după cum ne este obiceiul, am făcut un coffee-break, la pensiunea unde ne oprim noi de obicei.<br />
+            La întoarcere am luat-o prin Tălagiu, unde asfaltul este poros şi toată bicicleta zuruie, dar peisajul foarte fain.<br />
+            Am însoţit băieţii până la Bonţeşti pentru a avea 100+ km, iar de acolo, Florin a mai făcut o buclă la Almaş, pentru acelaşi motiv de distanţă, iar Felix şi Marius au luat-o spre Sebiş.<br />
+            Tură frumoasă şi plăcută de Duminică, o tura faină cu oameni faini şi puternici🥰.</p>
+            <p>Participanţi: Florin, Felix, Marius, Flavius şi Cosmin (parţial)</p>
+          </div> 
+          
+          <main class="main2">
+            <div class="container">
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/Varfurile_190524/varfurile01.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/Varfurile_190524/varfurile01.jpg" alt="Image Gallery">
+                  </a>
                 </div>
-              </a>                 
-              <a class=" lg:col-span-1 lg:row-span-1" href="paste.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/paste/paste00.jpg" alt="Tura de Paste"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Tura de Paşte</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">05 Mai 2024</time>
-                            <button class="arrow-button-primary">by Flavius Cristiu</button>
-                        </div>
-                    </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/Varfurile_190524/varfurile02.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/Varfurile_190524/varfurile02.jpg" alt="Image Gallery">
+                  </a>
                 </div>
-              </a>                 
-              <a class=" lg:col-span-1 lg:row-span-1" href="revetis.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/Revetis/revetis00.jpg" alt="Just Revetis"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Doar Revetiş</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">04 Mai 2024</time>
-                            <button class="arrow-button-primary">by Codrut Avram</button>
-                        </div>
-                    </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/Varfurile_190524/varfurile03.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/Varfurile_190524/varfurile03.jpg" alt="Image Gallery">
+                  </a>
                 </div>
-              </a>               
-              <a class=" lg:col-span-1 lg:row-span-1" href="taut01.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/taut/taut14.jpg" alt="Taut lake"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Lacul Tăuţ</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">22 Aprilie 2024</time>
-                            <button class="arrow-button-primary">by Flavius Cristiu</button>
-                        </div>
-                    </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/Varfurile_190524/varfurile04.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/Varfurile_190524/varfurile04.jpg" alt="Image Gallery">
+                  </a>
                 </div>
-              </a>   
-              <a class=" lg:col-span-1 lg:row-span-1" href="susani.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/susani00.jpg" alt="Tura de Susani"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Susani in doi</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">20 Aprilie 2024</time>
-                            <button class="arrow-button-primary">by Flavius Cristiu</button>
-                        </div>
-                    </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/Varfurile_190524/varfurile05.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/Varfurile_190524/varfurile05.jpg" alt="Image Gallery">
+                  </a>
                 </div>
-              </a>   
-              <a class=" lg:col-span-1 lg:row-span-1" href="beliu01.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/beliu01.jpg" alt="Tura de Beliu"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Tura de Beliu</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">13 Aprilie 2024</time>
-                            <button class="arrow-button-primary">by Flavius Cristiu</button>
-                        </div>
-                    </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/Varfurile_190524/varfurile06.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/Varfurile_190524/varfurile06.jpg" alt="Image Gallery">
+                  </a>
                 </div>
-              </a>                                                   
-              <a class=" lg:col-span-1 lg:row-span-1" href="dealumare.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/dealumare02.jpg" alt="Tura de Dealu Mare"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Tura de Dealu Mare</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">07 Aprilie 2024</time>
-                            <button class="arrow-button-primary">by Flavius Cristiu</button>
-                        </div>
-                    </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/Varfurile_190524/varfurile07.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/Varfurile_190524/varfurile07.jpg" alt="Image Gallery">
+                  </a>
                 </div>
-              </a>                                                                  
-            </div>            
+              </div>
+              <div class="card">
+                <div class="card-image">
+                  <a href="files/articles/Varfurile_190524/varfurile08.jpg" data-fancybox="gallery" data-caption="">
+                    <img src="files/articles/Varfurile_190524/varfurile08.jpg" alt="Image Gallery">
+                  </a>
+                </div>
+              </div>                                               
             </div>
-        </div>  
+          </main>
+        </article> 
     </div>
   </div>
  
@@ -417,6 +410,10 @@
         </div>
     </div>
 </div>
+<script>Fancybox.bind('[data-fancybox]', {
+    // Custom options for all galleries
+});    
+</script>
 </main>
  
 <footer>
