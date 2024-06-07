@@ -39,6 +39,16 @@
 <script src="js/website_app3661.js?v=2.0" defer></script>
 <script type="text/javascript" src="js/slick3661.js?v=2.0" defer></script>
 
+<!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-MQFC5GT');</script>
+<!-- End Google Tag Manager -->
 <script>
   (function (ss, ex) {
     window.ldfdr = window.ldfdr || function () {
@@ -56,7 +66,7 @@
 
 <body class="antialiased" x-data="{'showModal': false }" @keydown.escape="showModal = false" x-cloak :class="{ 'scroll_lock': showModal}">  
 <main>
-<div x-data="{show: false, selected: null}" class="cstm_header ">
+  <div x-data="{show: false, selected: null}" class="cstm_header ">
     <link rel="stylesheet" href="css/website_style3661.css?v=2.0">    
     <div class="sticky opacity-96 inset-x-0 top-0 bg-white shadow-nav z-50">
         <div class="mx-auto max-w-screen-2xl px-4 sm:px-0 sm:px-6">
@@ -98,12 +108,12 @@
                     <a href="articoleEN.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
                       <span>Articles</span>
                     </a>
-                  </div>   
+                  </div>  
                   <div class="relative cursor-pointer group px-px py-3">
                     <a href="workoutsEN.html" class="text-primary-800 group inline-flex items-center rounded-md bg-white text-base font-semibold group-hover:text-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2" aria-expanded="false">
                       <span>Workouts</span>
                     </a>
-                  </div>                                                   
+                  </div>                                                    
                 </nav>
                 <div class="hidden items-center justify-end lg:flex lg:flex-1 lg:w-0">
                     <a @click="showModal = true" class="ml-8 button cta-lh">Contact us</a>
@@ -118,7 +128,7 @@
                                         <a href="index.html">
                                             <img src="files/ro_flag.png">
                                         </a>    
-                                    </div>                                  
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -181,14 +191,14 @@
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="articoleEN.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                          <a href="articoleEN.htmls" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
                             <span class="ml-3 text-base font-semibold">Articles</span>
                           </a>
                         </div>
                       </div>
                       <div x-bind:class="selected == 'None' ? 'text-primary-500' : 'text-gray-900'">
                         <div class="flex items-center justify-between">
-                          <a href="workouts.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
+                          <a href="workoutsEN.html" class="-m-3 flex items-center rounded-md py-3 hover:bg-gray-50">
                             <span class="ml-3 text-base font-semibold">Workouts</span>
                           </a>
                         </div>
@@ -209,131 +219,51 @@
                                       <a href="index.html">
                                         <img src="files/ro_flag.png">Romana
                                       </a>  
-                                    </div>                                
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+            </div>
         </div>
     </div>
 </div>
   
   
+  
 <div>
-  <div class="mx-auto max-w-screen-2xl py-8 lg:py-14 px-6 lg:py-10 lg:px-28 space-y-8">
-      <div class="py-10 md:py-20">
-          <div class="mx-auto max-w-screen-xl px-6 mb-8 md:mb-0 space-y-10">
-          <h2 class="text-primary-800 font-black text-2xl md:text-4xl text-center">Articles</h2>    
-          <div class="grid grid-cols-2 gap-4 md:flex items-center justify-center mdspace-x-4">
-            <a href="articoleEN.html" class="border md:border-0 border-primary-500 inline-block font-semibold text-sm
-        md:text-lg text-center p-2 md:px-8 md:py-2 rounded  text-white bg-primary-500 ">Cycling articles
-            </a>
-            <a href="ture.html" class="border md:border-0 border-primary-500 inline-block font-semibold text-sm
-                md:text-lg text-center p-2 md:px-8 md:py-2 rounded text-primary-500 md:text-primary-800">Our routes
-            </a>              
-          </div>    
-          <div class="grid grid-cols-1 semi-md:grid-cols-2 lg:grid-cols-3 gap-y-6 semi-md:gap-10">
-              <a class=" lg:col-span-1 lg:row-span-1" href="#">
-                  <div class="space-y-2 flex h-full flex-col justify-between">
-                      <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/art2.jpg" alt="Honz-cycling"></div>
-                      <div class="space-y-2">
-                          <h4 class="font-black text-xl text-primary-800">Pedalling with Honz cycling</h4>              
-                          <div class="border-b border-primary-800 opacity-20"></div>
-                          <div class="flex items-center justify-between">
-                              <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">20 Martie 2024</time>
-                              <button class="arrow-button-primary">by Codrut Avram</button>
-                          </div>
-                      </div>
-                  </div>
-              </a>
-              <a class=" lg:col-span-1 lg:row-span-1" href="ziridava24.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/zrr.png" alt="Ziridava Road Race"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Ziridava Road Race 2024</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">15 Mai 2024</time>
-                            <button class="arrow-button-primary">by Flavius Cristiu</button>
-                        </div>
-                    </div>
-                </div>
-              </a> 
-              <a class=" lg:col-span-1 lg:row-span-1" href="paltinis24EN.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/paltinis24-1.jpg" alt="Paltinis challenge"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Paltinis challenge 2024</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">05 Iunie 2024</time>
-                            <button class="arrow-button-primary">by Flavius Cristiu</button>
-                        </div>
-                    </div>
-                </div>
-              </a>                 
-              <a class=" lg:col-span-1 lg:row-span-1" href="tchallengeEN.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/tfchallenge.jpg" alt="Transfagarasan challenge"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Transfagarasan challenge 2024</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">30 Martie 2024</time>
-                            <button class="arrow-button-primary">by Codrut Avram</button>
-                        </div>
-                    </div>
-                </div>
-              </a> 
-              <a class=" lg:col-span-1 lg:row-span-1" href="maxausnit.html">
-                  <div class="space-y-2 flex h-full flex-col justify-between">
-                      <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/art1.jpg" alt="Max Ausnit"></div>
-                      <div class="space-y-2">
-                          <h4 class="font-black text-xl text-primary-800">Max Ausnit 2024</h4>              
-                          <div class="border-b border-primary-800 opacity-20"></div>
-                          <div class="flex items-center justify-between">
-                              <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">21 Martie 2024</time>
-                              <button class="arrow-button-primary">by Flavius Cristiu</button>
-                          </div>
-                      </div>
-                  </div>
-              </a>                   
-              <a class=" lg:col-span-1 lg:row-span-1" href="indievelovszwift.html">
-                  <div class="space-y-2 flex h-full flex-col justify-between">
-                      <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/indievelovszwift.jpg" alt="IndieVelo vs Zwift"></div>
-                      <div class="space-y-2">
-                          <h4 class="font-black text-xl text-primary-800">indieVelo vs Zwift</h4>              
-                          <div class="border-b border-primary-800 opacity-20"></div>
-                          <div class="flex items-center justify-between">
-                              <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">22 Martie 2024</time>
-                              <button class="arrow-button-primary">by Flavius Cristiu</button>
-                          </div>
-                      </div>
-                  </div>
-              </a>         
-              <a class=" lg:col-span-1 lg:row-span-1" href="cyclingzones.html">
-                <div class="space-y-2 flex h-full flex-col justify-between">
-                    <div class="relative grow"><img class="w-full h-56 object-cover" src="files/articles/ftpzones.jpg" alt="Training zones"></div>
-                    <div class="space-y-2">
-                        <h4 class="font-black text-xl text-primary-800">Cycling training zones</h4>              
-                        <div class="border-b border-primary-800 opacity-20"></div>
-                        <div class="flex items-center justify-between">
-                            <time class="text-primary-800 text-sm font-light" datetime="2022-05-16T12:36:47+00:00">19 Aprilie 2024</time>
-                            <button class="arrow-button-primary">by Codrut Avram</button>
-                        </div>
-                    </div>
-                </div>
-              </a>                                                     
+    <div class="mx-auto max-w-screen-2xl py-8 lg:py-14 px-6 lg:py-10 lg:px-28 space-y-8">
+      <div></div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-1 lg:gap-8">
+        <article class="col-span-2 space-y-4 lg:space-y-8">
+          <div>
+            <img class="lg:h-blog-banner object-cover" src="files/articles/paltinis24-2.jpg" alt="Paltinis challenge" />
+          </div>
+          <div>
+            <div
+              class="text-sm lg:text-lg font-light bg-gray-500 px-2 lg:px-4 py-1 text-white inline-block rounded uppercase">
+              by Flavius Cristiu
+            </div>
+          </div>
+          <div>
+            <h1 class="text-primary-800 font-black text-2xl lg:text-4xl">Păltiniş challenge 2024</h1>
           </div>
           
-          </div>
-      </div>  
+          <div class="blog-content">
+            <p>PĂLTINIȘ CHALLENGE is an exciting event, for passionate riders, within the Sibiu Cycling Tour,
+              a pre-race before the pros’ competition.<br />                
+              The challenge is at its 2nd edition and it will take place on the 6th of July 2024 on a road route between Sibiu and Păltiniș</p>
+            <p>The Păltiniș Challenge is a new cycling competition for cycling enthusiasts, both women and men (over 17). The competition will have a route that will cover a distance of 27,4km with an elevation of 970m between Sibiu and Păltiniș. The Păltiniș Challenge will take place within the Sibiu Cycling Tour, as a pre-race prior to the professional stage on that day.</p>
+            <p>The participation fee is <b>19euro</b> (the package includes: participation kit, hydration point along the route and pasta party)</p>
+            <h3>More details on the official website of the challenge:  <a href="https://paltinis.t-challenge.ro/"  target="_blank">Păltiniș challenge 2024</a></h3>
+            </div>     
+        </article> 
+    </div>
   </div>
-</div>
  
   
-<div class="wvdr_legacy top">
+  <div class="wvdr_legacy top">
     <div id="home_free_demo_result" class="form_message">
         <div class="containerFormMessage">
             <div class="insideFormMessage">
@@ -359,81 +289,82 @@
     </div>
 </div>
 <div class="relative z-100 mb-8" aria-labelledby="modal-title" role="dialog" aria-modal="true" style="z-index:4000000;">
-    <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" @click="showModal = false"
-        x-show="showModal"></div>
+  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" @click="showModal = false"
+      x-show="showModal"></div>
 
-        <div class="fixed inset-0 z-10 overflow-y-auto" x-show="showModal" @click.away="showModal = false"
-        x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
-        x-transition:enter-end="opacity-100 scale-100" x-transition:leave="ease-in duration-300"
-        x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
-        <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-            <div
-            class="grid grid-cols-1 md:grid-cols-1 gap-10 md:gap-x-8 items-start md:w-full md:max-w-screen-s md:px-20">
-            <div
-            class="w-full relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-10 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-md md:max-w-full sm:p-6">
-            <div class="w-full max-w-full">
-                <img class="mx-auto rounded shadow-lg"
-                    src="files/topcontact2.jpg" alt="modal_banner" />
-            </div>
-            <div class="absolute top-0 right-0 pt-4 pr-4 md:block">
-                <button type="button" @click="showModal = false"
-                class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-                <span class="sr-only">Close</span>
-                            <!-- Heroicon name: outline/x-mark -->
-                            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="space-y-5">
-                        <div class="grid grid-cols-1 gap-y-5 schedule_contact">
-                            <p class="block font-medium text-normal text-gray-700"><br />Have a question or feedback for us? Fill out the form below and we will contact you shortly.</p>
-                            <form id="home_free_demo" action="contact_submission/" method="POST">
-                                <input type="hidden" name="csrfmiddlewaretoken" value="RDogNMaMgFbPpRXfbECcoeGGgCoi1iCdFp4jQbv25A40thYTAdn9xDA292cfBqu1">
+      <div class="fixed inset-0 z-10 overflow-y-auto" x-show="showModal" @click.away="showModal = false"
+      x-transition:enter="ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
+      x-transition:enter-end="opacity-100 scale-100" x-transition:leave="ease-in duration-300"
+      x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90">
+      <div class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+          <div
+          class="grid grid-cols-1 md:grid-cols-1 gap-10 md:gap-x-8 items-start md:w-full md:max-w-screen-s md:px-20">
+          <div
+          class="w-full relative transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-10 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-md md:max-w-full sm:p-6">
+          <div class="w-full max-w-full">
+              <img class="mx-auto rounded shadow-lg"
+                  src="files/topcontact2.jpg" alt="modal_banner" />
+          </div>
+          <div class="absolute top-0 right-0 pt-4 pr-4 md:block">
+              <button type="button" @click="showModal = false"
+              class="rounded-md bg-white text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+              <span class="sr-only">Close</span>
+                          <!-- Heroicon name: outline/x-mark -->
+                          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                              stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                          </svg>
+                      </button>
+                  </div>
+                  <div class="space-y-5">
+                      <div class="grid grid-cols-1 gap-y-5 schedule_contact">
+                        <p class="block font-medium text-normal text-gray-700"><br />Have a question or feedback for us? Fill out the form below and we will contact you shortly.</p>
+                        <form id="home_free_demo" action="contact_submission/" method="POST">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="RDogNMaMgFbPpRXfbECcoeGGgCoi1iCdFp4jQbv25A40thYTAdn9xDA292cfBqu1">
+                            <div>
                                 <div>
-                                    <div>
-                                        <label class="block font-medium text-normal text-gray-700"
-                                            for="home_firstname">Firstname</label>
-                                        <input
-                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="firstname" id="home_firstname" placeholder="Michael">
-                                    </div>
-
-                                    <div>
-                                        <label class="block font-medium text-normal text-gray-700" for="home_email">
-                                            E-mail</label>
-                                        <input
-                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="email" name="email" id="home_email"
-                                            placeholder="michael.ionescu@example.com">
-                                    </div>
-
-                                    <div class="mb-8">
-                                        <label class="block font-medium text-normal text-gray-700"
-                                            for="home_question">Message</label>
-                                        <input
-                                            class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
-                                            type="text" name="question" id="home_question"
-                                            placeholder="Your message or question">
-                                    </div>
-
-                                    <div class="mb-8" style="text-align:center;">
-                                        <div class="g-recaptcha" data-sitekey="6LfCS4kiAAAAAGw--TKam-WE3SVPuv9IQKOCQyau"></div>
-                                    </div>
+                                    <label class="block font-medium text-normal text-gray-700"
+                                        for="home_firstname">Firstname</label>
+                                    <input
+                                        class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                        type="text" name="firstname" id="home_firstname" placeholder="Michael">
                                 </div>
 
-                                <input type="hidden" name="english" id="home_demo_form" />
+                                <div>
+                                    <label class="block font-medium text-normal text-gray-700" for="home_email">
+                                        E-mail</label>
+                                    <input
+                                        class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                        type="email" name="email" id="home_email"
+                                        placeholder="michael.ionescu@example.com">
+                                </div>
 
-                                <input class="button" type="submit" value="Send">
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                                <div class="mb-8">
+                                    <label class="block font-medium text-normal text-gray-700"
+                                        for="home_question">Message</label>
+                                    <input
+                                        class="block w-full rounded-md border-primary-800 md:p-3 md:px-4 shadow-sm focus:border-primary-500 md:text-normal focus:ring-primary-500 sm:text-sm"
+                                        type="text" name="question" id="home_question"
+                                        placeholder="Your message or question">
+                                </div>
+
+                                <div class="mb-8" style="text-align:center;">
+                                    <div class="g-recaptcha" data-sitekey="6LfCS4kiAAAAAGw--TKam-WE3SVPuv9IQKOCQyau"></div>
+                                </div>
+                            </div>
+                            <input class="button" type="submit" value="Send">
+                        </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
+<script>Fancybox.bind('[data-fancybox]', {
+    // Custom options for all galleries
+});    
+</script>
 </main>
  
 <footer>
